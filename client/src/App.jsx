@@ -2,7 +2,6 @@ import React, { Suspense, lazy } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './Pages/Home'
-import { Spinner } from '@nextui-org/react'
 const About = lazy(() => import('./Pages/About'))
 const Services = lazy(() => import('./Pages/Services'))
 const Contact = lazy(() => import('./Pages/Contact'))
