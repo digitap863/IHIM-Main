@@ -1,0 +1,106 @@
+.bubble1 {
+    right: 40%; /* Set the initial right position */
+    bottom: 50%; /* Set the initial bottom position */
+    animation: moveBubble1 40s ease-in-out infinite alternate, bobble1 10s ease-in-out infinite alternate;
+    /* Adjust the animation durations and distances as needed */
+  }
+  
+  @keyframes moveBubble1 {
+    0%, 100% {
+      right: 30%; 
+    }
+    50% {
+      right: 75%; 
+    }
+  }
+  
+  @keyframes bobble1 {
+    0%, 100% {
+      bottom: 50%; 
+    }
+    50% {
+      bottom: 55%;
+    }
+  }
+  /* left-[8%] bottom-[9%]   */
+  .bubble2 {
+    left: 8%; /* Set the initial left position */
+    bottom: 9%; /* Set the initial bottom position */
+    animation: moveBubble2 35s ease-in-out infinite alternate, bobble2 10s ease-in-out infinite alternate;
+    /* Adjust the animation durations and distances as needed */
+  }
+  
+  @keyframes moveBubble2 {
+    0%, 100% {
+      left: 6%;
+    }
+    50% {
+      left: 10%;
+    }
+  }
+  
+  @keyframes bobble2 {
+    0%, 100% {
+      bottom: 9%;
+    }
+    50% {
+      bottom: 12%;
+    }
+  }
+
+  /* right-[8%] bottom-[18%]  */
+  .bubble3 {
+    right: 8%; /* Set the initial left position */
+    bottom: 18%; /* Set the initial bottom position */
+    animation: moveBubble3 35s ease-in-out infinite alternate, bobble3 10s ease-in-out infinite alternate;
+    /* Adjust the animation durations and distances as needed */
+  }
+  
+  @keyframes moveBubble3{
+    0%, 100% {
+      right: 5%;
+    }
+    50% {
+      right: 12%;
+    }
+  }
+  
+  @keyframes bobble3 {
+    0%, 100% {
+      bottom: 15%;
+    }
+    50% {
+      bottom: 21%;
+    }
+  }
+  
+  .cloud {
+    top: 30%; /* Adjust the vertical position */
+    animation: moveCloud 15s linear infinite;
+    z-index: 1;
+}
+
+@keyframes moveCloud {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+.swinging-girl {
+  transform: translateX(-50%);
+  animation: swing 2s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0%, 100% {
+      transform: translateX(-50%);
+  }
+  25% {
+      transform: translateX(-53%); /* Adjust the leftmost position */
+  }
+  75% {
+      transform: translateX(-47%); /* Adjust the rightmost position */
+  }
+}
