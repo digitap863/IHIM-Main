@@ -2,6 +2,8 @@ import React, { Suspense, lazy } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './Pages/Home'
+import AllServices from './Pages/AllServices'
+import LandingPage from './Pages/LandingPage'
 const About = lazy(() => import('./Pages/About'))
 const Services = lazy(() => import('./Pages/Services'))
 const Contact = lazy(() => import('./Pages/Contact'))
@@ -27,6 +29,7 @@ const FallbackUI = () => <div className="preloader loaded-success fixed top-0 in
 function App() {
   return (
     <BrowserRouter>
+      <div className='overflow-hidden'>
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/" element={<FallbackUI />} /> */}
@@ -34,7 +37,10 @@ function App() {
         <Route path="/services" element={<Suspense fallback={<FallbackUI />}><Services /></Suspense>} />
         <Route path="/contact" element={<Suspense fallback={<FallbackUI />}><Contact /></Suspense>} />
         <Route path="/gallery" element={<Suspense fallback={<FallbackUI />}><Gallery /></Suspense>} />
+        <Route path="/all-services" element={<Suspense fallback={<FallbackUI />}><AllServices /></Suspense>} />
+        <Route path="/landing" element={<Suspense fallback={<FallbackUI />}><LandingPage /></Suspense>} />
       </Routes>
+      </div>
     </BrowserRouter>
   )
 }

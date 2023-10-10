@@ -104,3 +104,45 @@
       transform: translateX(-47%); /* Adjust the rightmost position */
   }
 }
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(3rem, -3rem);
+  }
+  50% {
+    transform: translate(-3rem, 3rem);
+  }
+  75% {
+    transform: translate(-3rem, -3rem);
+  }
+}
+
+.float{
+  animation: floatAnimation 15s ease-in-out infinite;
+}
+
+
+@keyframes floatAnimation2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(2rem, 2rem);
+  }
+  40% {
+    transform: translate(-2rem, 2rem);
+  }
+  60% {
+    transform: translate(2rem, -2rem);
+  }
+  80% {
+    transform: translate(-2rem, -2rem);
+  }
+}
+
+.float2 {
+  animation: floatAnimation2 13s ease-in-out infinite;
+}

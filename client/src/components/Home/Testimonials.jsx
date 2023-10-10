@@ -7,6 +7,9 @@ import testi1 from '../../assets/Images/Home/testi1.png'
 import testi2 from '../../assets/Images/Home/testi2.png'
 import testi3 from '../../assets/Images/Home/testi3.png'
 import quotes from '../../assets/Images/Home/quotesicon.png'
+import leaf from '../../assets/Images/Shared/leaf.png'
+import leafM from '../../assets/Images/Shared/leafMirror.png'
+import bubble from '../../assets/Images/Shared/Ellipse1.png'
 
 function Testimonials() {
     const users = [
@@ -30,7 +33,7 @@ function Testimonials() {
             name: "James, USA",
             img: testi1
         },
-         {
+        {
             name: "James, USA",
             img: testi1
         },
@@ -41,24 +44,42 @@ function Testimonials() {
 
     ]
     return (
-        <div className='flex flex-col items-center font-mont mx-20'>
-            <h1 className='text-[#1A5D1A] font-bold text-5xl'>OUR CUSTOMER EXPERIENCES</h1>
-            <div className='flex w-[90%] mt-16'>
+        <div className='flex flex-col items-center font-mont px-5 lg:px-20 relative overflow'>
+            <img src={bubble} alt="" className='absolute w-[20%] opacity-10 -bottom-[10%] -right-[10%] float' />
+            <img src={bubble} alt="" className='absolute w-[40%] lg:w-[10%] opacity-30 top-[10%] right-[2%]' />
+            <img src={leaf} alt="" className='absolute w-[20%] lg:w-[10%]  top-[10%] -right-[2%] rotate-90' />
+            <img src={leafM} alt="" className='absolute w-[20%] lg:w-[11%]  bottom-[5%] -left-[2%] -rotate-90' />
+            <h1 className='text-[#1A5D1A] font-bold text-center lg:text-left text-[2.4rem] lg:text-5xl'>OUR CUSTOMER EXPERIENCES</h1>
+            <div className='flex w-[90%] mt-16 relative'>
+
                 <Swiper
                     modules={[Autoplay]}
                     className='flex'
                     spaceBetween={45}
-                    slidesPerView={3}
-                    autoplay
+                    autoplay={{ delay: 1500 }}
                     loop={true}
+                    breakpoints={{
+                        // when window width is less than 640px (mobile)
+                        640: {
+                            slidesPerView: 1,
+                        },
+                        // when window width is between 640px and 1024px (tablet)
+                        1024: {
+                            slidesPerView: 2,
+                        },
+                        // when window width is greater than 1024px (laptop)
+                        1025: {
+                            slidesPerView: 3,
+                        },
+                    }}
                 >
                     {users.map((elem) => (
                         <SwiperSlide className='w-full' key={elem.name}>
-                            <div className='h-[26rem] shadow-2xl flex flex-col justify-between items-center rounded-[3rem] relative'>
+                            <div className='h-[26rem] shadow-2xl flex flex-col justify-between items-center rounded-2xl lg:rounded-[3rem] relative bg-white'>
                                 <h2 className='text-xl mt-7 font-semibold'>{elem.name}</h2>
                                 <img src={stars} alt="stars" className='-mt-10 w-[35%]' />
                                 <img src={elem.img} alt="user" className='w-[25%] absolute top-[28%] z-10' />
-                                <div className='bg-[#1A5D1A] h-64 rounded-b-[3rem] rounded-t-[2rem] flex items-center p-10 w-full relative'>
+                                <div className='bg-[#1A5D1A] h-64 rounded-b-2xl lg:rounded-b-[3rem] rounded-t-[2rem] flex items-center p-10 w-full relative'>
                                     <img src={quotes} alt="" className='-top-2 left-0 w-[40%] absolute' />
                                     <p className='z-10 mt-12 text-white'>Lorem ipsum dolor sit amet,
                                         consectetur adipiscing elit, sed

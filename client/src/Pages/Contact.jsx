@@ -6,10 +6,10 @@ import SendMsg from '../components/Contact/SendMsg'
 
 function Contact() {
   return (
-    <div><Layout header={<ContactHeader pageTitle={"CONTACT"} title={"Get in Touch"}/>}>
-        <SendMsg/>
-        <ContactUs/>
-        </Layout></div>
+    <div><Layout header={<ContactHeader pageTitle={"CONTACT"} title={"Get in Touch"} />}>
+      <SendMsg />
+      <ContactUs />
+    </Layout></div>
   )
 }
 

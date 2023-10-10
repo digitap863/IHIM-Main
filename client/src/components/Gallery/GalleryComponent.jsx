@@ -11,6 +11,7 @@ import image9 from '../../assets/Images/Galllery/9.jpg'
 import image10 from '../../assets/Images/Galllery/10.jpg'
 import image11 from '../../assets/Images/Galllery/11.jpg'
 import { Tab, Tabs } from '@nextui-org/react'
+import leaf from '../../assets/Images/Shared/leaf.png'
 
 function GalleryComponent() {
     const images = [
@@ -49,42 +50,6 @@ function GalleryComponent() {
         },
     ]
 
-    // const images1 = [
-    //     {
-    //         image: image3
-    //     },
-    //     {
-    //         image: image4
-    //     },
-    //     {
-    //         image: image1
-    //     },
-    //     {
-    //         image: image5
-    //     },
-    //     {
-    //         image: image7
-    //     },
-    //     {
-    //         image: image2
-    //     },
-    //     {
-    //         image: image6
-    //     },
-    //     {
-    //         image: image9
-    //     },
-    //     {
-    //         image: image8
-    //     },
-    //     {
-    //         image: image10
-    //     },
-    //     {
-    //         image: image11
-    //     },
-    // ]
-
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -93,7 +58,8 @@ function GalleryComponent() {
         return array; // Return the shuffled array
     }
     return (
-        <div className='bg-white -mt-[20%] z-10 relative py-5 px-8'>
+        <div className='b-white -mt-[20%] z-10 relative py-5 px-8'>
+            <img src={leaf} alt="" className='absolute w-[5%] top-[4%]  rotate-90 -right-[1%]' />
             <Tabs variant='underlined' className='w-full' fullWidth>
                 <Tab key="workspace" title="Workspace">
                     <div className='columns-1 sm:columns-2 lg:columns-2 place-items-start [&>img:not(:first-child)]:mt-3'>
