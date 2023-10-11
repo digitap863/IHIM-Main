@@ -54,7 +54,7 @@ function EducationTraining() {
                             slidesPerView: 1,
                         },
                         // when window width is between 640px and 1024px (tablet)
-                        1024: {
+                        768: {
                             slidesPerView: 2,
                         },
                         // when window width is greater than 1024px (laptop)

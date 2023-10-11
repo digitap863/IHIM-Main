@@ -42,7 +42,7 @@ function TourismServices() {
                     <p className='leading-relaxed text-[0.9rem] text-justify'>{`“Hillocks & Brooks”, Adventure Awaits: Embark on Thrilling Expeditions. Our adventure tours are tailored for the daring and curious souls seeking adrenaline-pumping experiences. Traverse breathtaking landscapes, conquer challenging terrains, and immerse yourself in exhilarating activities while forging unforgettable memories. Discover new horizons and push your limits with our expertly guided adventure tours.`}</p>
                 </div>
             </div>
-            <div className='lg:hidden w-full relative z-10'>
+            <div className='lg:hidden w-full relative z-10 '>
                 <Swiper
                     modules={[Autoplay, Scrollbar, Navigation]}
                     scrollbar={{
@@ -63,7 +63,7 @@ function TourismServices() {
                             slidesPerView: 1,
                         },
                         // when window width is between 640px and 1024px (tablet)
-                        1024: {
+                        768: {
                             slidesPerView: 2,
                         },
                         // when window width is greater than 1024px (laptop)

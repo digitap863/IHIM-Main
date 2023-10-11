@@ -13,8 +13,10 @@ import leaf from '../../assets/Images/Shared/leaf.png'
 import leafM from '../../assets/Images/Shared/leafMirror.png'
 import bubble from '../../assets/Images/Shared/Ellipse1.png'
 import '../CustomCss/Animation.css'
+import { useNavigate } from 'react-router-dom';
 
 function ServicesPreview() {
+    const navigate = useNavigate()
     return (
         <div className='mx-5 lg:mx-40 flex flex-col lg:flex-row justify-center gap-10 py-20 font-mont relative'>
             <img src={bubble} alt="" className='absolute w-[15%] opacity-20 -bottom-[10%] -rotate-90 right-[8%] float2' />
@@ -30,7 +32,7 @@ function ServicesPreview() {
                     <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><MdOutlineSelfImprovement /></span>Self-improvement Techniques and Skills</p>
                     <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><GiBrain /></span>Solution finding for Real –life situations</p>
                 </div>
-                <button className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
+                <button onClick={()=>navigate('/all-services')} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
             </div>
             <div className='border rounded-2xl shadow-lg pt-10 pb-24 flex flex-col items-center relative gap-7 lg:w-[40%] bg-white'>
                 <img src={services2} alt="" className='w-[70%]' />
@@ -47,7 +49,7 @@ function ServicesPreview() {
                     <p className='flex items-center gap-3 italic font-semibold'><span className='text-3xl text-[#1A5D1A]'><GiWitchFlight /></span>Adventure-tours</p>
                     <p className='ml-10'>“Hillocks & Brooks”</p>
                 </div>
-                <button className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
+                <button onClick={()=>navigate('/all-services')} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
             </div>
         </div>
     )

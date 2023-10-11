@@ -14,10 +14,10 @@ function Header({ title, subtitle, img,pageTitle }) {
       <img src={ellipse1} alt="ellipse1" className='absolute -left-[5%] bottom-[10%] opacity-50 z-0 w-[30%] lg:w-[18%]' />
       <img src={ellipse1} alt="ellipse1" className='absolute opacity-30 z-0 w-[25%] bubble3' />
       <img src={ellipse1} alt="ellipse1" className='absolute  opacity-40 z-0 w-[10%] bubble2' />
-      <div className='lg:ml-36 ml-10 z-10 relative flex flex-col mt-32 lg:mt-0 lg:justify-center  h-full w-full'>
+      <div className='lg:ml-36 ml-10 z-10 relative flex flex-col mt-32 lg:mt-0 lg:justify-center md:gap-3 lg:gap-0 h-full w-full'>
         <h5 className='text-green-900 font-semibold text-xl'>{pageTitle}</h5>
-        <h1 className='text-white text-4xl lg:text-7xl font-bold lg:font-extrabold w-[90%]'>{title}</h1>
-        <p className='text-white mt-5  text-lg lg:w-[65%] leading-tight'>{subtitle}</p>
+        <h1 className='text-white text-4xl md:text-7xl font-bold lg:font-extrabold w-[90%]'>{title}</h1>
+        <p className='text-white mt-5  text-lg md:w-[60%] lg:w-[65%] leading-tight'>{subtitle}</p>
         {/* <button className='flex items-center gap-2 mt-10 w-44 bg-[#EAB600] text-white py-3 hover:bg-[#e4ff4d] hover:text-gray-500 transition ease-in-out duration-300 px-5 rounded-xl  font-semibold'>Know More <ChevronDoubleRightIcon className='w-5' /></button> */}
       </div>
       <div className=' lg:w-[37%] z-10 overflow-hidden h-full'>

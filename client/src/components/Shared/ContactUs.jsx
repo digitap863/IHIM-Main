@@ -9,7 +9,7 @@ function ContactUs() {
     return (
         <div className='relative'>
             <img src={leafM} alt="" className='absolute w-[20%] lg:w-[10%] -bottom-[8%] lg:bottom-0 rotate-90 -right-[1%]' />
-            <div className='bg-[#E0F0D5] my-16 rounded-2xl lg:rounded-[3rem] shadow-lg py-5 lg:py-16 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-center mx-4 lg:mx-20 gap-24 font-mont relative'>
+            <div className='bg-[#E0F0D5] my-16 rounded-2xl lg:rounded-[3rem] shadow-lg py-5 lg:py-16 md:px-6 lg:px-20 flex flex-col-reverse md:flex-row items-center justify-center mx-4 lg:mx-20 gap-24 font-mont relative'>
                 <img src={bubble} alt="" className='absolute w-[10%] opacity-30 top-[10%] right-[15%] z-0' />
                 <img src={bubble} alt="" className='absolute w-[10%] opacity-20 float2 top-[10%] right-[50%] z-0' />
                 <img src={bubble} alt="" className='absolute w-[17%] opacity-20 -rotate-45 bottom-[2%] left-[5%] z-0' />
@@ -21,7 +21,7 @@ function ContactUs() {
                         Enquire Now  <ChevronDoubleRightIcon className='w-5' />
                     </Button>
                 </div>
-                <img src={img} alt="" className='w-[80%] lg:w-[35%]' />
+                <img src={img} alt="" className='w-[80%] md:w-[35%]' />
             </div>
         </div>
     )

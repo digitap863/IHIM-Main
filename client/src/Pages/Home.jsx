@@ -24,8 +24,8 @@ function Home() {
                 <img src={ellipse1} alt="ellipse1" className='absolute opacity-30 z-0 w-[25%] bubble3' />
                 <img src={ellipse1} alt="ellipse1" className='absolute  opacity-40 z-0 w-[10%] bubble2' />
                 <div className='lg:ml-36 ml-8 z-20 relative flex flex-col mt-20 lg:mt-0 lg:justify-center h-full'>
-                    <h1 className='text-white text-[2.1rem] lg:text-7xl font-bold lg:font-extrabold lg:w-[70%]'>Development And Happiness To All</h1>
-                    <p className='text-white mt-5 text-lg lg:w-[35%] leading-tight'>Building the right attitude to personal growth that leads to career growth.</p>
+                    <h1 className='text-white text-[2.1rem] md:text-7xl font-bold lg:font-extrabold lg:w-[70%]'>Development And Happiness To All</h1>
+                    <p className='text-white mt-5 text-lg md:w-[70%] md:text-xl lg:text-lg lg:w-[35%] leading-tight'>Building the right attitude to personal growth that leads to career growth.</p>
                     <button className='flex items-center gap-2 mt-10 w-44 bg-[#EAB600] text-white py-3 hover:bg-[#e4ff4d] hover:text-gray-500 transition ease-in-out duration-300 px-5 rounded-xl  font-semibold'>Know More <ChevronDoubleRightIcon className='w-5' /></button>
                 </div>
                 <div className='absolute bottom-[10%] -right-[5%] lg:right-12 lg:-top-2 w-full lg:w-[37%] z-10 overflow-hidden'>

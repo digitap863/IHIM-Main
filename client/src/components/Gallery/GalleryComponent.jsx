@@ -58,7 +58,7 @@ function GalleryComponent() {
         return array; // Return the shuffled array
     }
     return (
-        <div className='-mt-[90%] mt lg:-mt-[20%] z-10 relative py-5 px-1 lg:px-8'>
+        <div className='-mt-[110%] md:-mt-[90%]  lg:-mt-[20%] z-10 relative py-5 px-1 lg:px-8'>
             <img src={leaf} alt="" className='absolute w-[5%] top-[4%]  rotate-90 -right-[1%]' />
             <Tabs variant='underlined' className='w-full' fullWidth>
                 <Tab key="workspace" title="Workspace"> 
