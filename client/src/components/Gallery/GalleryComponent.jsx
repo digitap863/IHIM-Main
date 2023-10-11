@@ -58,11 +58,11 @@ function GalleryComponent() {
         return array; // Return the shuffled array
     }
     return (
-        <div className='b-white -mt-[20%] z-10 relative py-5 px-8'>
+        <div className='-mt-[140%] mt lg:-mt-[20%] z-10 relative py-5 px-1 lg:px-8'>
             <img src={leaf} alt="" className='absolute w-[5%] top-[4%]  rotate-90 -right-[1%]' />
             <Tabs variant='underlined' className='w-full' fullWidth>
                 <Tab key="workspace" title="Workspace">
-                    <div className='columns-1 sm:columns-2 lg:columns-2 place-items-start [&>img:not(:first-child)]:mt-3'>
+                    <div className='columns-2 sm:columns-2 lg:columns-2 place-items-start gap-1 lg:gap-3 [&>img:not(:first-child)]:mt-1 lg:[&>img:not(:first-child)]:mt-3'>
                         {
                             shuffleArray(images).map((elem, index) => (
                                 <img src={elem.image} alt="" className='w' key={index} />
@@ -71,7 +71,7 @@ function GalleryComponent() {
                     </div>
                 </Tab>
                 <Tab key="Programs" title="Programs">
-                    <div className='columns-1 sm:columns-2 lg:columns-2 place-items-start [&>img:not(:first-child)]:mt-3'>
+                    <div className='columns-2 sm:columns-2 lg:columns-2 place-items-start gap-1 lg:gap-3 [&>img:not(:first-child)]:mt-1 lg:[&>img:not(:first-child)]:mt-3'>
                         {
                             shuffleArray(images).map((elem, index) => (
                                 <img src={elem.image} alt="" className='w' key={index} />
@@ -80,7 +80,7 @@ function GalleryComponent() {
                     </div>
                 </Tab>
                 <Tab key="workspace1" title="Workspace1">
-                    <div className='columns-1 sm:columns-2 lg:columns-2 place-items-start [&>img:not(:first-child)]:mt-3'>
+                    <div className='columns-2 sm:columns-2 lg:columns-2 place-items-start gap-1 lg:gap-3 [&>img:not(:first-child)]:mt-1 lg:[&>img:not(:first-child)]:mt-3'>
                         {
                             shuffleArray(images).map((elem, index) => (
                                 <img src={elem.image} alt="" className='w' key={index} />
@@ -89,7 +89,7 @@ function GalleryComponent() {
                     </div>
                 </Tab>
                 <Tab key="Programs1" title="Programs1">
-                    <div className='columns-1 sm:columns-2 lg:columns-2 place-items-start [&>img:not(:first-child)]:mt-3'>
+                    <div className='columns-2 sm:columns-2 lg:columns-2 place-items-start gap-1 lg:gap-3 [&>img:not(:first-child)]:mt-1 lg:[&>img:not(:first-child)]:mt-3'>
                         {
                             shuffleArray(images).map((elem, index) => (
                                 <img src={elem.image} alt="" className='w' key={index} />

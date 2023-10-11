@@ -52,44 +52,44 @@ function Testimonials() {
             <h1 className='text-[#1A5D1A] font-bold text-center lg:text-left text-[2.4rem] lg:text-5xl'>OUR CUSTOMER EXPERIENCES</h1>
             <div className='flex w-[90%] mt-16 relative'>
 
-                <Swiper
-                    modules={[Autoplay]}
-                    className='flex'
-                    spaceBetween={45}
-                    autoplay={{ delay: 1500 }}
-                    loop={true}
-                    breakpoints={{
-                        // when window width is less than 640px (mobile)
-                        640: {
-                            slidesPerView: 1,
-                        },
-                        // when window width is between 640px and 1024px (tablet)
-                        1024: {
-                            slidesPerView: 2,
-                        },
-                        // when window width is greater than 1024px (laptop)
-                        1025: {
-                            slidesPerView: 3,
-                        },
-                    }}
-                >
-                    {users.map((elem) => (
-                        <SwiperSlide className='w-full' key={elem.name}>
-                            <div className='h-[26rem] shadow-2xl flex flex-col justify-between items-center rounded-2xl lg:rounded-[3rem] relative bg-white'>
-                                <h2 className='text-xl mt-7 font-semibold'>{elem.name}</h2>
-                                <img src={stars} alt="stars" className='-mt-10 w-[35%]' />
-                                <img src={elem.img} alt="user" className='w-[25%] absolute top-[28%] z-10' />
-                                <div className='bg-[#1A5D1A] h-64 rounded-b-2xl lg:rounded-b-[3rem] rounded-t-[2rem] flex items-center p-10 w-full relative'>
-                                    <img src={quotes} alt="" className='-top-2 left-0 w-[40%] absolute' />
-                                    <p className='z-10 mt-12 text-white'>Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt
-                                        ut labore et dolore magna aliqua.</p>
+                    <Swiper
+                        modules={[Autoplay]}
+                        className='flex'
+                        spaceBetween={45}
+                        autoplay={{ delay: 1500 }}
+                        loop={true}
+                        breakpoints={{
+                            // when window width is less than 640px (mobile)
+                            640: {
+                                slidesPerView: 1,
+                            },
+                            // when window width is between 640px and 1024px (tablet)
+                            1024: {
+                                slidesPerView: 2,
+                            },
+                            // when window width is greater than 1024px (laptop)
+                            1025: {
+                                slidesPerView: 3,
+                            },
+                        }}
+                    >
+                        {users.map((elem) => (
+                            <SwiperSlide className='w-full' key={elem.name}>
+                                <div className='h-[26rem] shadow-2xl flex flex-col justify-between items-center rounded-2xl lg:rounded-[3rem] relative bg-white'>
+                                    <h2 className='text-xl mt-7 font-semibold'>{elem.name}</h2>
+                                    <img src={stars} alt="stars" className='-mt-10 w-[35%]' />
+                                    <img src={elem.img} alt="user" className='w-[25%] absolute top-[28%] z-10' />
+                                    <div className='bg-[#1A5D1A] h-64 rounded-b-2xl lg:rounded-b-[3rem] rounded-t-[2rem] flex items-center p-10 w-full relative'>
+                                        <img src={quotes} alt="" className='-top-2 left-0 w-[40%] absolute' />
+                                        <p className='z-10 mt-12 text-white'>Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed
+                                            do eiusmod tempor incididunt
+                                            ut labore et dolore magna aliqua.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
             </div>
         </div>
     )

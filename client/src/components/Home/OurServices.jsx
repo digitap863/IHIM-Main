@@ -19,7 +19,7 @@ function OurServices() {
       <p className=' w-[90%] lg:w-[52%] text-center'>{`Welcome to our captivating activities that promise excitement and enrichment. Dive into thrilling
 adventures, connect with local cultures, and explore nature's wonders. From adrenaline-pumping
 escapades to serene escapes, our activities cater to all interests`}.</p>
-      <div className='flex flex-col lg:flex-row gap-8 justify-center mx-5 lg:mx-40 relative z-30'>
+      <div className='flex flex-col lg:flex-row gap-8 justify-center mx-5 lg:mx-40 relative z-10'>
         <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[50%] bg-whit '>
           <img src={services1} alt="" />
           <h4 className='font-semibold text-2xl lg:text-xl my-5'>Education and Training</h4>
