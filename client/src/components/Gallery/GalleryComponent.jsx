@@ -58,10 +58,10 @@ function GalleryComponent() {
         return array; // Return the shuffled array
     }
     return (
-        <div className='-mt-[140%] mt lg:-mt-[20%] z-10 relative py-5 px-1 lg:px-8'>
+        <div className='-mt-[90%] mt lg:-mt-[20%] z-10 relative py-5 px-1 lg:px-8'>
             <img src={leaf} alt="" className='absolute w-[5%] top-[4%]  rotate-90 -right-[1%]' />
             <Tabs variant='underlined' className='w-full' fullWidth>
-                <Tab key="workspace" title="Workspace">
+                <Tab key="workspace" title="Workspace"> 
                     <div className='columns-2 sm:columns-2 lg:columns-2 place-items-start gap-1 lg:gap-3 [&>img:not(:first-child)]:mt-1 lg:[&>img:not(:first-child)]:mt-3'>
                         {
                             shuffleArray(images).map((elem, index) => (
