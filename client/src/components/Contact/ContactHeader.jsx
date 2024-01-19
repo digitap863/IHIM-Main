@@ -36,7 +36,8 @@ function ContactHeader({ title, pageTitle }) {
             <FaLinkedinIn />
           </span>
         </div>
-        {path === '/contact' ? <div className='flex flex-col px-5 lg:px-0 lg:flex-row justify-center gap-4 lg:gap-10 mt-10 lg:mt-20'>
+        {path === '/contact' ? 
+        <div className='flex flex-col px-5 lg:px-0 lg:flex-row justify-center gap-4 lg:gap-10 mt-10 lg:mt-20'>
           <div className='bg-white flex pl-3 lg:pl-6  lg:w-1/3 gap-7 items-center rounded-xl py-4 lg:py-10'>
             <div className='bg-[#1A5D1A] text-2xl md:text-3xl lg:text-4xl text-white rounded-full flex items-center justify-center w-12 h-12 md:h-16 md:w-16 lg:w-20 lg:h-20'>
               <IoIosMail />

@@ -15,7 +15,8 @@ export const theme = {
   },
   fontFamily: {
     mont: ["Montserrat", "sans-serif",],
-    petrona:[ 'Petrona', 'serif']
+    petrona:[ 'Petrona', 'serif'],
+    stoke:['Stoke','serif']
   },
 };
 export const darkMode = "class";
