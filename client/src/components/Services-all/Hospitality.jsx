@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Scrollbar } from 'swiper/modules';
 import { IoMan } from 'react-icons/io5';
 import { MdOutlineSelfImprovement } from 'react-icons/md';
-import { GiBrain } from 'react-icons/gi';
 
 function Hospitality() {
   return (

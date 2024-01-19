@@ -22,17 +22,17 @@ function OurServices() {
       <h5 className='font-semibold my-1'>Innovative human resource applications</h5>
       <p className='text-center text-tiny mb-5 md:text-base mt-2'>Professional Facilitation hubs. <br />  Development and Happiness through activities.</p>
       <div className='flex flex-col md:flex-row gap-8 justify-center mx-5 lg:mx-28 mb-10 relative z-10'>
-        <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 w-[33%]'>
+        <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
           <img src={services1} alt="" className='w-[24%]' />
           <h4 className='font-[500] text-2xl lg:text-2xl my-4 text-[#1A5D1A] font-stoke'>ATHE AKADEMIA</h4>
           <p className='text-center md:text-sm lg:w-[90%]'>Education and Training Development and Happiness through knowledge</p>
         </div>
-        <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 w-[33%]'>
+        <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
           <img src={services2} alt="" className='w-[24%]' />
           <h4 className='font-[500] text-2xl lg:text-2xl my-4 text-[#1A5D1A] font-stoke'>LITTLE HUTS</h4>
           <p className='text-center md:text-sm lg:w-[90%]'>Hospitality center, Health Care Center, Innovative Tourism Services, Infrastructure envelopment, Development and Happiness through care</p>
         </div>
-        <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 w-[33%]'>
+        <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
           <img src={services3} alt="" className='w-[24%]' />
           <h4 className='font-[500] text-2xl lg:text-2xl my-4 text-[#1A5D1A] font-stoke'>SWEN HERITAGE</h4>
           <p className='text-center md:text-sm lg:w-[90%]'>Theatre for Socio-Cultural-Art Literary Interactions, Development and Happiness through events</p>
