@@ -38,7 +38,6 @@ function OurServices() {
           <p className='text-center md:text-sm lg:w-[90%]'>Theatre for Socio-Cultural-Art Literary Interactions, Development and Happiness through events</p>
         </div>
       </div>
-      
       <button className='flex gap-2 items-center border-[3px] text-[#1A5D1A] py-1.5 px-2.5 font-semibold rounded-lg border-[#1A5D1A] hover:bg-green-100'>Explore Now <ChevronDoubleRightIcon className='w-5' /></button>
     </div>
   )

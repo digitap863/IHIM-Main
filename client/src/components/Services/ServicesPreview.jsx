@@ -79,28 +79,20 @@ function ServicesPreview() {
                         <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><MdOutlineSelfImprovement /></span>Self-improvement Techniques and Skills</p>
                         <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><GiBrain /></span>Solution finding for Real –life situations</p>
                     </div>
-                    <button onClick={() => navigate('/all-services')} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
+                    <button onClick={() => navigate('/all-services',{state:300})} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
                 </div>
                 <div className='border rounded-2xl shadow-lg pt-10 pb-24 flex flex-col items-center relative gap-7 lg:w-[40%] bg-white'>
                     <img src={sd2} alt="" className='w-[30%]' />
                     <h1 className='text-[#1A5D1A] font-[5    00] text-2xl lg:text-2xl text-center font-stoke'>HOSPITALITY</h1>
                     <div className='flex flex-col px-10 font-medium items-start w-full gap-3'>
-                        <p className='flex items-center gap-3 italic font-semibold'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Edu-tours</p>
-                        <p className='ml-10'>“Ente Keralam”- A travel through the history and culture of Kerala</p>
-                        <p className='flex items-center gap-3 italic font-semibold'><span className='text-3xl text-[#1A5D1A]'><PiPlantFill /></span>Eco-tours</p>
-                        <p className='ml-10'>“Kalladikkodan Beauty”</p>
-                        <p className='flex items-center gap-3 italic font-semibold'><span className='text-3xl text-[#1A5D1A]'><BsCalendar2DateFill /></span>Festival-tours</p>
-                        <p className='ml-10'>“For thy Eyes & Minds” <br />
-                            Through the festivals of Kerala
-                        </p>
-                        <p className='flex items-center gap-3 italic font-semibold'><span className='text-3xl text-[#1A5D1A]'><GiWitchFlight /></span>Adventure-tours</p>
-                        <p className='ml-10'>“Hillocks & Brooks”</p>
+                    <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><IoMan /></span>Health Care Centre</p>
+                        <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><MdOutlineSelfImprovement /></span>Infrastructure Development</p>
                     </div>
-                    <button onClick={() => navigate('/all-services')} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
+                    <button onClick={() => navigate('/all-services',{state:1000})} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
                 </div>
                 <div className='border rounded-2xl shadow-lg pt-10 pb-24 flex flex-col items-center relative gap-7 lg:w-[40%] bg-white'>
                     <img src={sd3} alt="" className='w-[30%]' />
-                    <h1 className='text-[#1A5D1A] font-[5    00] text-2xl lg:text-2xl text-center font-stoke'>TOURISM AND SERVICES</h1>
+                    <h1 className='text-[#1A5D1A] font-[5    00] text-2xl lg:text-22xl text-center font-stoke'>TOURISM AND SERVICES</h1>
                     <div className='flex flex-col px-10 font-medium items-start w-full gap-3'>
                         <p className='flex items-center gap-3 italic font-semibold'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Edu-tours</p>
                         <p className='ml-10'>“Ente Keralam”- A travel through the history and culture of Kerala</p>
@@ -113,7 +105,7 @@ function ServicesPreview() {
                         <p className='flex items-center gap-3 italic font-semibold'><span className='text-3xl text-[#1A5D1A]'><GiWitchFlight /></span>Adventure-tours</p>
                         <p className='ml-10'>“Hillocks & Brooks”</p>
                     </div>
-                    <button onClick={() => navigate('/all-services')} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
+                    <button onClick={() => navigate('/all-services',{state:1500})} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
                 </div>
             </div>
 
