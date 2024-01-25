@@ -25,11 +25,11 @@ function ServicesPreview() {
     const navigate = useNavigate()
     const [showMore, setShowMore] = useState('truncate');
     const toggleText = () => {
-      if(showMore.length===0){
-        setShowMore('truncate')
-      }else{
-        setShowMore('')
-      }
+        if (showMore.length === 0) {
+            setShowMore('truncate')
+        } else {
+            setShowMore('')
+        }
     };
     return (
         <div className='mx-5 lg:mx-40 flex flex-col items-center py-20 font-mont relative'>
@@ -56,35 +56,51 @@ function ServicesPreview() {
             <div className='flex flex-col lg:flex-row justify-center gap-10 '>
                 <div className='border rounded-2xl shadow-lg pt-10 pb-24 flex flex-col items-center relative gap-7 lg:w-[33%] bg-white'>
                     <img src={services1} alt="" className='w-[30%]' />
-                    <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl'>ATHE AKADEMIA</h1>
-                    <div className='flex flex-col px-10 font-medium gap-6 items-start w-full'>
+                    <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl'>SATV AKADEMIA</h1>
+                    <div className='flex flex-col px-10 font-medium gap-2 items-start w-full'>
                         <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><IoMan /></span>Education and Training</p>
-                        <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><MdOutlineSelfImprovement /></span>Development and Happiness through Knowledge</p>
-                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><GiBrain /></span>Solution finding for Real –life situations</p>
+                        <ul className='ml-10 list-disc'>
+                            <li>Management & Training</li>
+                            <li>Skill development studies & Training</li>
+                            <li>Awareness Program</li>
+                        </ul>
+                        {/* <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><MdOutlineSelfImprovement /></span>Development and Happiness through Knowledge</p>
+                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><GiBrain /></span>Solution finding for Real –life situations</p> */}
                     </div>
                     <button onClick={() => navigate('/all-services')} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
                 </div>
                 <div className='border rounded-2xl shadow-lg pt-10 pb-24 flex flex-col items-center relative gap-7 lg:w-[33%] bg-white'>
                     <img src={services2} alt="" className='w-[30%]' />
                     <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl'>LITTLE HUTS</h1>
-                    <div className='flex flex-col px-10 font-medium items-start w-full gap-6'>
-                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Hospitality Center</p>
-                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><PiPlantFill /></span>Healthcare Center</p>
-                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><BsCalendar2DateFill /></span>Innovative Tourism Services</p>
-                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><GiWitchFlight /></span>Development and Happiness through Care</p>
+                    <div className='flex flex-col px-10 font-medium items-start w-full gap-2'>
+                        {/* <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Hospitality Center</p>
+                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><PiPlantFill /></span>Healthcare Center</p> */}
+                        <p className='flex items-center gap-2'><span className='text-3xl text-[#1A5D1A]'><BsCalendar2DateFill /></span>Innovative Tourism Services</p>
+                        <ul className='ml-10 list-disc'>
+                            <li>Edu-Tourism</li>
+                            <li>Eco-Tourism</li>
+                            <li>Adventure Tourism</li>
+                            <li>Wellness Tourism</li>
+                        </ul>
+                        {/* <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><GiWitchFlight /></span>Development and Happiness through Care</p> */}
                     </div>
                     <button onClick={() => navigate('/all-services')} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
                 </div>
                 <div className='border rounded-2xl shadow-lg pt-10 pb-24 flex flex-col items-center relative gap-7 lg:w-[33%] bg-white'>
                     <img src={services3} alt="" className='w-[30%]' />
                     <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl'>SWEN HERITAGE</h1>
-                    <div className='flex flex-col px-10 font-medium items-start w-full gap-6'>
+                    <div className='flex flex-col px-10 font-medium items-start w-full gap-2'>
                         <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Theatre for Socio-Cultural-Art- Literary Interactions</p>
-                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><PiPlantFill /></span>Healthcare Center</p>
+                        <ul className='ml-10 list-disc'>
+
+                            <li>Social, Cultural art, literary</li>
+                            <li>HRD & Educational Events</li>
+                        </ul>
+                        {/* <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><PiPlantFill /></span>Healthcare Center</p>
                         <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><BsCalendar2DateFill /></span>Innovative Tourism Services</p>
-                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><GiWitchFlight /></span>Development and Happiness through Care</p>
+                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><GiWitchFlight /></span>Development and Happiness through Care</p> */}
                     </div>
-                    <button onClick={() => navigate('/all-services')} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
+                    <button onClick={() => navigate('/all-services')} className='flex items-center gap-3 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
                 </div>
             </div>
             <h1 className='text-[#1A5D1A] font-bold text-3xl mt-10 md:text-4xl'>SERVICE DIVISIONS</h1>
