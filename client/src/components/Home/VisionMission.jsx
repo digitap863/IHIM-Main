@@ -16,21 +16,13 @@ function VisionMission() {
                     <div className='lg:w-[50%] flex flex-col justify-center items-center mt-10 lg:mt-0 lg:p-10'>
                         <img src={mission1} alt="" className='w-[60%] lg:w-[40%]' />
                         <h3 className='text-[#1A5D1A] text-3xl font-bold my-4'>Our Vision</h3>
-                        <p className='md:w-[90%] lg:w-[70%] text-center leading-relaxed text-[1.1rem]'>Development & happiness are the most important
-                            desire of an individual. This is true with people from
-                            all walks of life. When they attain this desire they
-                            self-actualization of their needs hierarchy  have the feeling of the landing at the plane of</p>
+                        <p className='md:w-[90%] lg:w-[80%] text-center leading-relaxed text-[1rem]'>Empower individuals worldwide to unlock their full potential through a movement dedicated to human resource development. We blend the profound insights of Eastern and Western Personality Development and Management theories, creating a transformative journey towards self-realisation, skill enhancement, and overall well-being.</p>
                        
                     </div>
                     <div className='lg:w-[50%] flex flex-col justify-center items-center p-5  lg:p-10'>
                         <img src={mission2} alt="" className='w-[80%] lg:w-[40%]' />
                         <h3 className='text-[#1A5D1A] text-3xl font-bold my-4'>Our Mission</h3>
-                        <p className=' lg:w-[70%] text-center leading-relaxed text-[1.1rem]'>Facilitating opportunities and activities enabling
-                            Self improvement to the individuals from all
-                            walks of life those who are getting associated
-                            with the self improvement movement of
-                            the organization</p>
-
+                        <p className='md:w-[90%] lg:w-[80%] text-center leading-relaxed text-[1rem]'>Foster a global community of empowered individuals who have harnessed their Human Resource Potentials, transforming them into valuable Human Resource Capitals. Our vision is to bridge East and West, cultivating a dynamic space where individuals thrive in personal and professional capacities, contributing to a world enriched by the collective development and happiness of its members.</p>
                     </div>
                 </div>
                 <button className='flex items-center relative text-center gap-2 w-48 bg-[#EAB600] text-white py-3 hover:bg-[#e4ff4d] hover:text-gray-500 transition ease-in-out duration-300 px-10 rounded-xl  font-semibold'>Join Now <ChevronDoubleRightIcon className='w-5' /></button>

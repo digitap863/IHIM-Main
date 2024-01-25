@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import services1 from '../../assets/Images/Home/services1.png'
 import services2 from '../../assets/Images/Home/services2.png'
 import services3 from '../../assets/Images/Home/services3.png'
@@ -23,6 +23,14 @@ import { useNavigate } from 'react-router-dom';
 
 function ServicesPreview() {
     const navigate = useNavigate()
+    const [showMore, setShowMore] = useState('truncate');
+    const toggleText = () => {
+      if(showMore.length===0){
+        setShowMore('truncate')
+      }else{
+        setShowMore('')
+      }
+    };
     return (
         <div className='mx-5 lg:mx-40 flex flex-col items-center py-20 font-mont relative'>
             <img src={bubble} alt="" className='absolute w-[15%] opacity-20 -bottom-[10%] -rotate-90 right-[8%] float2' />
@@ -31,6 +39,16 @@ function ServicesPreview() {
             <img src={leaf} alt="" className='absolute w-[30%] lg:w-[15%]  top-0 -left-[8%] lg:-left-[15%]' />
             <img src={leafM} alt="" className='absolute w-[25%] lg:w-[12%] top-[40%] rotate-90 -right-[10%] lg:-right-[16%]' />
             <h1 className='text-[#1A5D1A] font-bold text-3xl md:text-4xl'>OUR HUBS DIVISIONS</h1>
+            <p className='w-[80%] md:w-[50%] text-center hidden md:block my-4'>{`The multidisciplinary Hub where "IHA karmena shri sambhavathi '' reigns, meaning 'here SHRI is attained through engagement in activities,' with SHRI representing Development & Happiness. By Giving Three faces to the activity which happens under karmakshetra which is Little huts, satv akademia and swen heritage`}</p>
+            <p
+                className={`w-[80%] md:w-[50%] text-center md:hidden my-4 ${showMore
+                    }`}
+            >
+                {`The multidisciplinary Hub where "IHA karmena shri sambhavathi '' reigns, meaning 'here SHRI is attained through engagement in activities,' with SHRI representing Development & Happiness. By Giving Three faces to the activity which happens under karmakshetra which is Little huts, satv akademia and swen heritage`}
+            </p>
+            {!showMore.length == 0 && (
+                <button onClick={toggleText} className='md:hidden'>See More</button>
+            )}
             <img src={ks} className='w-[25%] md:w-[20%] xl:w-[10%] my-5' alt="" />
             <h1 className='text-[#1A5D1A] font-stoke text-2xl md:text-3xl'>KARMAKSHETRA</h1>
             <h5 className='font-semibold my-1'>Innovative human resource applications</h5>
@@ -69,7 +87,17 @@ function ServicesPreview() {
                     <button onClick={() => navigate('/all-services')} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
                 </div>
             </div>
-            <h1 className='text-[#1A5D1A] font-bold text-3xl my-10 md:text-4xl'>OUR HUBS DIVISIONS</h1>
+            <h1 className='text-[#1A5D1A] font-bold text-3xl mt-10 md:text-4xl'>SERVICE DIVISIONS</h1>
+            <p className='w-[80%] md:w-[50%] text-center hidden md:block my-4'>{`In IHIM, we recognize three main learner types: auditory, visual, and kinesthetic, or a combination of these. Our knowledge transfer is rooted in the principles of experimental and experiential learning, ensuring a tailored approach to cater to diverse learning preferences`}</p>
+            <p
+                className={`w-[80%] md:w-[50%] text-center md:hidden my-4 ${showMore
+                    }`}
+            >
+                {`In IHIM, we recognize three main learner types: auditory, visual, and kinesthetic, or a combination of these. Our knowledge transfer is rooted in the principles of experimental and experiential learning, ensuring a tailored approach to cater to diverse learning preferences`}
+            </p>
+            {!showMore.length == 0 && (
+                <button onClick={toggleText} className='md:hidden'>See More</button>
+            )}
             <div className='flex flex-col lg:flex-row justify-center gap-10 '>
                 <div className='border rounded-2xl shadow-lg pt-10 pb-24 flex flex-col items-center relative gap-7 lg:w-[40%] bg-white'>
                     <img src={sd1} alt="" className='w-[30%]' />
@@ -79,16 +107,16 @@ function ServicesPreview() {
                         <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><MdOutlineSelfImprovement /></span>Self-improvement Techniques and Skills</p>
                         <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><GiBrain /></span>Solution finding for Real –life situations</p>
                     </div>
-                    <button onClick={() => navigate('/all-services',{state:300})} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
+                    <button onClick={() => navigate('/all-services', { state: 300 })} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
                 </div>
                 <div className='border rounded-2xl shadow-lg pt-10 pb-24 flex flex-col items-center relative gap-7 lg:w-[40%] bg-white'>
                     <img src={sd2} alt="" className='w-[30%]' />
                     <h1 className='text-[#1A5D1A] font-[5    00] text-2xl lg:text-2xl text-center font-stoke'>HOSPITALITY</h1>
                     <div className='flex flex-col px-10 font-medium items-start w-full gap-3'>
-                    <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><IoMan /></span>Health Care Centre</p>
+                        <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><IoMan /></span>Health Care Centre</p>
                         <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><MdOutlineSelfImprovement /></span>Infrastructure Development</p>
                     </div>
-                    <button onClick={() => navigate('/all-services',{state:1000})} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
+                    <button onClick={() => navigate('/all-services', { state: 1000 })} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
                 </div>
                 <div className='border rounded-2xl shadow-lg pt-10 pb-24 flex flex-col items-center relative gap-7 lg:w-[40%] bg-white'>
                     <img src={sd3} alt="" className='w-[30%]' />
@@ -105,7 +133,7 @@ function ServicesPreview() {
                         <p className='flex items-center gap-3 italic font-semibold'><span className='text-3xl text-[#1A5D1A]'><GiWitchFlight /></span>Adventure-tours</p>
                         <p className='ml-10'>“Hillocks & Brooks”</p>
                     </div>
-                    <button onClick={() => navigate('/all-services',{state:1500})} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
+                    <button onClick={() => navigate('/all-services', { state: 1500 })} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>
                 </div>
             </div>
 

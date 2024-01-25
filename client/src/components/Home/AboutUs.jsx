@@ -21,7 +21,7 @@ function AboutUs({title,content}) {
         <div className='relative px-4 lg:px-0 flex flex-col items-center lg:items-start w-full'>
             <p className='font-extrabold mb-5 hidden lg:block'>{title==='ABOUT US'?title:''}</p>
             <h2 className={`text-[#1A5D1A] ${title==='ABOUT US'?'':'mt-16'} text-center lg:text-left mb-5 font-bold text-3xl md:text-4xl lg:text-5xl`}>{title}</h2>
-            <p className='text-gray-700 text-center lg:text-left md:w-[85%] lg:w-[75%] leading-[1.8rem]'>{content}</p>
+            <p className='text-gray-700 text-center lg:text-left md:w-[85%] lg:w-[75%] leading-[1.8rem]' dangerouslySetInnerHTML={{__html:content}}></p>
             {path==='/about'?null:<button className='flex items-center gap-2 mt-10 w-44 bg-[#EAB600] text-white py-3 hover:bg-[#e4ff4d] hover:text-gray-500 transition ease-in-out duration-300 px-5 rounded-xl  font-semibold'>Know More <ChevronDoubleRightIcon className='w-5' /></button>}
         </div>
     </div>
