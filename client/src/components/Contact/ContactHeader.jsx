@@ -44,8 +44,8 @@ function ContactHeader({ title, pageTitle }) {
             </div>
             <div className='flex flex-col gap-1'>
               <h3 className='font-semibold md:font-bold lg:font-semibold text-lg md:text-2xl lg:text-lg'>Mail Us</h3>
-              <p>ihim@kochi.in</p>
-              <p>ihim@kochi.in</p>
+              <a href='mailto:ihimworld@gmail.com'>ihimworld@gmail.com</a>
+              {/* <p>ihim@kochi.in</p> */}
 
             </div>
           </div>
@@ -55,9 +55,8 @@ function ContactHeader({ title, pageTitle }) {
             </div>
             <div className='flex flex-col gap-1'>
               <h3 className='font-semibold md:font-bold lg:font-semibold text-lg md:text-2xl lg:text-lg'>Call Us</h3>
-              <p>+91 9542645832</p>
-              <p>+91 9542645832</p>
-
+              <a href="tel:+919946646651">+919946646651</a>
+              <a href="tel:+919567851158">+919567851158</a>
             </div>
           </div>
           <div className='bg-white flex pl-3 lg:pl-6  lg:w-1/3 gap-7 items-center rounded-xl py-4 lg:py-10'>
@@ -66,9 +65,8 @@ function ContactHeader({ title, pageTitle }) {
             </div>
             <div className='flex flex-col gap-1'>
               <h3 className='font-semibold md:font-bold lg:font-semibold text-lg md:text-2xl lg:text-lg'>Locate Us</h3>
-              <p>737 Powlowski Light,<br />
-                Vytila, Kochi, Kerala, India <br />
-                680022</p>
+              <p>193 A, PARC, <br />
+               Kalavath Road, <br /> Near BSNL, Palarvattom PO, <br /> Kochi-682025.</p>
             </div>
           </div>
         </div> : null}

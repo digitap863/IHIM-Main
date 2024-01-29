@@ -13,14 +13,14 @@ function Footer() {
             </div>
             <div>
                 <h2 className='text-xl lg:text-3xl font-bold mb-3 lg:mb-9'>Address</h2>
-                <p className='font-normal'>737 Powlowski Light, Vytila <br />
-                    Kochi, Kerala, India <br />
-                    680022</p>
+                <p className='font-normal'>193 A, PARC, <br />
+               Kalavath Road, <br /> Near BSNL, Palarvattom PO, <br /> Kochi-682025.</p>
             </div>
             <div className='font-normal flex flex-col gap-1 lg:gap-4'>
                 <h2 className='text-xl lg:text-3xl font-bold mb-4'>Contact Us</h2>
-                <a href="mailto:ihim@kochi.in">ihim@kochi.in</a>
-                <a href="tel:+919543754642">+91 9543754642</a>
+                <a href="mailto:ihimworld@gmail.com">ihimworld@gmail.com</a>
+                <a href="tel:+919567851158">+919567851158</a>
+                <a href="tel:+919946646651">+919946646651</a>
             </div>
             <div className='flex text-xl lg:text-2xl gap-3 lg:gap-4'>
                 <span className='rounded-full flex items-center justify-center p-1 h-[2.5rem] w-[2.5rem] lg:h-[3rem] lg:w-[3rem] border-[1px] lg:border-[3px] hover:text-orange-700 hover:bg-white transition ease-in-out duration-300'>

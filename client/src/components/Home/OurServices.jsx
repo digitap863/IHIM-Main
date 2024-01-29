@@ -11,9 +11,9 @@ import ks from '../../assets/Images/Services/karmakshetra.png'
 function OurServices() {
   const [showMore, setShowMore] = useState('truncate');
   const toggleText = () => {
-    if(showMore.length===0){
+    if (showMore.length === 0) {
       setShowMore('truncate')
-    }else{
+    } else {
       setShowMore('')
     }
   };
@@ -25,17 +25,24 @@ function OurServices() {
       <img src={bubble} alt="" className='absolute w-[10%] opacity-20 bottom-[10%] right-[2%] z-0' />
       <img src={bubble} alt="" className='absolute w-[10%] opacity-20 bottom-[2%] left-[4%] z-0' />
       <h1 className='text-[#1A5D1A] font-bold text-3xl md:text-5xl'>OUR HUBS DIVISIONS</h1>
-        <p className='w-[80%] md:w-[50%] text-center hidden md:block my-4'>{`The multidisciplinary Hub where "IHA karmena shri sambhavathi '' reigns, meaning 'here SHRI is attained through engagement in activities,' with SHRI representing Development & Happiness. By Giving Three faces to the activity which happens under karmakshetra which is Little huts, satv akademia and swen heritage`}</p>
-        <p
+      <p className='w-[80%] md:w-[50%] text-center hidden md:block my-4'>{`IHA Karnakshethras are the centers of  "ihavasa sutra" the solution  provider sutra for all Real Life Situations. Other three faces of services which happen under IHIM are LITTLEHUTS, SATV AKADEMIA and SWEN HERITAGE.`}</p>
+      {/* <p className='w-[80%] md:w-[50%] text-center hidden md:block my-4'>{`The multidisciplinary Hub where "IHA karmena shri sambhavathi '' reigns, meaning 'here SHRI is attained through engagement in activities,' with SHRI representing Development & Happiness. By Giving Three faces to the activity which happens under karmakshetra which is Little huts, satv akademia and swen heritage`}</p> */}
+      <p
+        className={`w-[80%] md:w-[50%] text-center md:hidden my-4 ${showMore
+          }`}
+      >
+        {`IHA Karnakshethras are the centers of  "ihavasa sutra" the solution  provider sutra for all Real Life Situations. Other three faces of services which happen under IHIM are LITTLEHUTS, SATV AKADEMIA and SWEN HERITAGE.`}
+      </p>
+      {/* <p
           className={`w-[80%] md:w-[50%] text-center md:hidden my-4 ${
             showMore
           }`}
         >
           {`The multidisciplinary Hub where "IHA karmena shri sambhavathi '' reigns, meaning 'here SHRI is attained through engagement in activities,' with SHRI representing Development & Happiness. By Giving Three faces to the activity which happens under karmakshetra which is Little huts, satv akademia and swen heritage`}
-        </p>
-        {!showMore.length==0 && (
-          <button onClick={toggleText} className='md:hidden'>See More</button>
-        )}
+        </p> */}
+      {!showMore.length == 0 && (
+        <button onClick={toggleText} className='md:hidden'>See More</button>
+      )}
       <img src={ks} className='w-[25%] md:w-[20%] xl:w-[10%] mb-8   ' alt="" />
       <h1 className='text-[#1A5D1A] font-stoke text-2xl md:text-4xl'>KARMAKSHETRA</h1>
       <h5 className='font-semibold my-1'>(Innovative human resource applications)</h5>
@@ -46,7 +53,7 @@ function OurServices() {
           <h4 className='font-[500] text-2xl mt-4 text-[#1A5D1A] font-stoke'>SATV AKADEMIA</h4>
           <h5 className='font-semibold mb-1'>Education & Training</h5>
           <ul className='text-sm list-disc'>
-            <li>Management & Training</li>
+            <li>Management studies & Training</li>
             <li>Skill development studies & Training</li>
             <li>Awareness Program</li>
           </ul>
@@ -54,20 +61,23 @@ function OurServices() {
         <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
           <img src={services2} alt="" className='w-[24%]' />
           <h4 className='font-[500] text-2xl lg:text-2xl mt-4 text-[#1A5D1A] font-stoke'>LITTLE HUTS</h4>
-          <h5 className='font-semibold mb-1'>Innovative Tourism Service</h5>
+          <h5 className='font-semibold mb-1'>Hospitality Services</h5>
+          <h5 className='font-semibold mb-1'>Innovative Tourism Services</h5>
           <ul className='text-sm list-disc w-[50%] text-left'>
             <li>Edu-Tourism</li>
             <li>Eco-Tourism</li>
             <li>Adventure Tourism</li>
             <li>Wellness Tourism</li>
           </ul>
+          <h5 className='font-semibold mb-1 mt-1'>Health Care Services</h5>
+         <p>Screening / Referral / Research</p>
         </div>
         <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
           <img src={services3} alt="" className='w-[24%]' />
           <h4 className='font-[500] text-2xl lg:text-2xl mt-4 text-[#1A5D1A] font-stoke'>SWEN HERITAGE</h4>
-          <h5 className='font-semibold mb-1 text-center'>Theatre for International social & Cultural Interaction</h5>
+          <h5 className='font-semibold mb-1 text-center'>Theatre for Evenets</h5>
           <ul className='text-sm list-disc'>
-            <li>Social, Cultural art, literary</li>
+            <li>Social, Cultural, Art, literary</li>
             <li>HRD & Educational Events</li>
           </ul>
         </div>

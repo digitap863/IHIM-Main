@@ -39,13 +39,21 @@ function ServicesPreview() {
             <img src={leaf} alt="" className='absolute w-[30%] lg:w-[15%]  top-0 -left-[8%] lg:-left-[15%]' />
             <img src={leafM} alt="" className='absolute w-[25%] lg:w-[12%] top-[40%] rotate-90 -right-[10%] lg:-right-[16%]' />
             <h1 className='text-[#1A5D1A] font-bold text-3xl md:text-4xl'>OUR HUBS DIVISIONS</h1>
-            <p className='w-[80%] md:w-[50%] text-center hidden md:block my-4'>{`The multidisciplinary Hub where "IHA karmena shri sambhavathi '' reigns, meaning 'here SHRI is attained through engagement in activities,' with SHRI representing Development & Happiness. By Giving Three faces to the activity which happens under karmakshetra which is Little huts, satv akademia and swen heritage`}</p>
+            <p className='w-[80%] md:w-[50%] text-center hidden md:block my-4'>{`IHA Karnakshethras are the centers of  "ihavasa sutra" the solution  provider sutra for all Real Life Situations. Other three faces of services which happen under IHIM are LITTLEHUTS, SATV AKADEMIA and SWEN HERITAGE.`}</p>
+            {/* <p className='w-[80%] md:w-[50%] text-center hidden md:block my-4'>{`The multidisciplinary Hub where "IHA karmena shri sambhavathi '' reigns, meaning 'here SHRI is attained through engagement in activities,' with SHRI representing Development & Happiness. By Giving Three faces to the activity which happens under karmakshetra which is Little huts, satv akademia and swen heritage`}</p> */}
             <p
                 className={`w-[80%] md:w-[50%] text-center md:hidden my-4 ${showMore
                     }`}
             >
-                {`The multidisciplinary Hub where "IHA karmena shri sambhavathi '' reigns, meaning 'here SHRI is attained through engagement in activities,' with SHRI representing Development & Happiness. By Giving Three faces to the activity which happens under karmakshetra which is Little huts, satv akademia and swen heritage`}
+                {`IHA Karnakshethras are the centers of  "ihavasa sutra" the solution  provider sutra for all Real Life Situations. Other three faces of services which happen under IHIM are LITTLEHUTS, SATV AKADEMIA and SWEN HERITAGE.`}
             </p>
+            {/* <p
+          className={`w-[80%] md:w-[50%] text-center md:hidden my-4 ${
+            showMore
+          }`}
+        >
+          {`The multidisciplinary Hub where "IHA karmena shri sambhavathi '' reigns, meaning 'here SHRI is attained through engagement in activities,' with SHRI representing Development & Happiness. By Giving Three faces to the activity which happens under karmakshetra which is Little huts, satv akademia and swen heritage`}
+        </p> */}
             {!showMore.length == 0 && (
                 <button onClick={toggleText} className='md:hidden'>See More</button>
             )}
@@ -60,7 +68,7 @@ function ServicesPreview() {
                     <div className='flex flex-col px-10 font-medium gap-2 items-start w-full'>
                         <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><IoMan /></span>Education and Training</p>
                         <ul className='ml-10 list-disc'>
-                            <li>Management & Training</li>
+                            <li>Management studies & Training</li>
                             <li>Skill development studies & Training</li>
                             <li>Awareness Program</li>
                         </ul>
@@ -73,8 +81,9 @@ function ServicesPreview() {
                     <img src={services2} alt="" className='w-[30%]' />
                     <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl'>LITTLE HUTS</h1>
                     <div className='flex flex-col px-10 font-medium items-start w-full gap-2'>
-                        {/* <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Hospitality Center</p>
-                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><PiPlantFill /></span>Healthcare Center</p> */}
+                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Hospitality Center</p>
+                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><PiPlantFill /></span>Healthcare Center</p>
+                        <p className='ml-5'>Screening / Referral / Research</p>
                         <p className='flex items-center gap-2'><span className='text-3xl text-[#1A5D1A]'><BsCalendar2DateFill /></span>Innovative Tourism Services</p>
                         <ul className='ml-10 list-disc'>
                             <li>Edu-Tourism</li>
@@ -90,7 +99,7 @@ function ServicesPreview() {
                     <img src={services3} alt="" className='w-[30%]' />
                     <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl'>SWEN HERITAGE</h1>
                     <div className='flex flex-col px-10 font-medium items-start w-full gap-2'>
-                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Theatre for Socio-Cultural-Art- Literary Interactions</p>
+                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Theatre for Events  </p>
                         <ul className='ml-10 list-disc'>
 
                             <li>Social, Cultural art, literary</li>
