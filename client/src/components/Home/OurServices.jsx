@@ -52,7 +52,7 @@ function OurServices() {
           <img src={services1} alt="" className='w-[24%]' />
           <h4 className='font-[500] text-2xl mt-4 text-[#1A5D1A] font-stoke'>SATV AKADEMIA</h4>
           <h5 className='font-semibold mb-1'>Education & Training</h5>
-          <ul className='text-sm list-disc'>
+          <ul className='text-sm text-center'>
             <li>Management studies & Training</li>
             <li>Skill development studies & Training</li>
             <li>Awareness Program</li>
@@ -61,22 +61,23 @@ function OurServices() {
         <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
           <img src={services2} alt="" className='w-[24%]' />
           <h4 className='font-[500] text-2xl lg:text-2xl mt-4 text-[#1A5D1A] font-stoke'>LITTLE HUTS</h4>
-          <h5 className='font-semibold mb-1'>Hospitality Services</h5>
-          <h5 className='font-semibold mb-1'>Innovative Tourism Services</h5>
-          <ul className='text-sm list-disc w-[50%] text-left'>
+          <h5 className='font-semibold mb-1'>Hospitality & Tourism</h5>
+          <h5 className='mb-1 font-[500]'>Innovative Tourism Services</h5>
+          <ul className='text-sm text-center'>
             <li>Edu-Tourism</li>
             <li>Eco-Tourism</li>
             <li>Adventure Tourism</li>
             <li>Wellness Tourism</li>
+            <li>Festival Tourism</li>
           </ul>
-          <h5 className='font-semibold mb-1 mt-1'>Health Care Services</h5>
+          <h5 className='my-1 font-[500]'>Health Care Services</h5>
          <p>Screening / Referral / Research</p>
         </div>
         <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
           <img src={services3} alt="" className='w-[24%]' />
           <h4 className='font-[500] text-2xl lg:text-2xl mt-4 text-[#1A5D1A] font-stoke'>SWEN HERITAGE</h4>
           <h5 className='font-semibold mb-1 text-center'>Theatre for Evenets</h5>
-          <ul className='text-sm list-disc'>
+          <ul className='text-sm text-center'>
             <li>Social, Cultural, Art, literary</li>
             <li>HRD & Educational Events</li>
           </ul>

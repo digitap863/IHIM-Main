@@ -81,16 +81,17 @@ function ServicesPreview() {
                     <img src={services2} alt="" className='w-[30%]' />
                     <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl'>LITTLE HUTS</h1>
                     <div className='flex flex-col px-10 font-medium items-start w-full gap-2'>
-                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Hospitality Center</p>
-                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><PiPlantFill /></span>Healthcare Center</p>
-                        <p className='ml-5'>Screening / Referral / Research</p>
+                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Hospitality & Tourism</p>
                         <p className='flex items-center gap-2'><span className='text-3xl text-[#1A5D1A]'><BsCalendar2DateFill /></span>Innovative Tourism Services</p>
                         <ul className='ml-10 list-disc'>
                             <li>Edu-Tourism</li>
                             <li>Eco-Tourism</li>
                             <li>Adventure Tourism</li>
                             <li>Wellness Tourism</li>
+                            <li>Festival Tourism</li>
                         </ul>
+                        <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><PiPlantFill /></span>Healthcare Center</p>
+                        <p className='ml-10'>Screening / Referral / Research</p>
                         {/* <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><GiWitchFlight /></span>Development and Happiness through Care</p> */}
                     </div>
                     <button onClick={() => navigate('/all-services')} className='flex items-center gap-2 border-[#1A5D1A] border-[2px] rounded-lg px-6 py-2 text-[#1A5D1A] font-semibold absolute bottom-5 hover:bg-green-100'>Learn More <BiSolidRightArrow /></button>

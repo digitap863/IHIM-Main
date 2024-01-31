@@ -61,7 +61,7 @@ function Navbar() {
   }, [prevScrollPos]);
   return (
     <div className='w-full fixed top-0 left-0 z-30'>
-      <div className='lg:flex items-center justify-between py-4 md:px-10 px-7'>
+      <div className={`lg:flex ${scrolling=='text-[#1A5D1A]'?'bg-white':''} items-center justify-between py-4 md:px-10 px-7`}>
         {/* logo section */}
         <div className='font-bold text-2xl flex items-center gap-1 '>
           {/* <BookOpenIcon className='w-7 h-7 text-blue-600'/> */}
