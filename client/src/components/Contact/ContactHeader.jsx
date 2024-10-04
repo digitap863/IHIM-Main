@@ -14,7 +14,7 @@ function ContactHeader({ title, pageTitle }) {
   const location = useLocation()
   const path = location.pathname
   return (
-    <div className='h-screen bg-gradient-to-br from-[#258425] to-[#85A231] relative overflow-hidden font-mont flex items-center px-2 lg:px-20'>
+    <div className='h-screen bg-gradient-to-br from-[#258425] to-[#85A231] relative overflow-hidden font-mont flex items-center px-2 xl:px-20'>
       <Navbar />
       <img src={ellipse1} alt="ellipse1" className='absolute -left-[20%] -top-[60%] z-0 opacity-90 w-[40%]' />
       <img src={ellipse1} alt="ellipse1" className='absolute -right-[21%] bottom-[9%] opacity-40 w-[37.5%] z-10' />
@@ -22,9 +22,9 @@ function ContactHeader({ title, pageTitle }) {
       <img src={ellipse1} alt="ellipse1" className='absolute -left-[5%] bottom-[10%] opacity-50 z-0  w-[18%]' />
       <img src={ellipse1} alt="ellipse1" className='absolute opacity-30 z-0 w-[25%] bubble3' />
       <img src={ellipse1} alt="ellipse1" className='absolute  opacity-40 z-0 w-[10%] bubble2' />
-      <div className='ml-4 lg:ml-20 z-10 relative flex flex-col justify-center mt-10 lg:mt-0 h-full w-full'>
+      <div className='ml-4 xl:ml-20 z-10 relative flex flex-col justify-center mt-10 lg:mt-0 h-full w-full'>
         <h5 className='text-green-900 font-semibold text-xl'>{pageTitle}</h5>
-        <h1 className='text-white text-5xl lg:text-7xl font-extrabold mt-3 lg:w-[90%]'>{title}</h1>
+        <h1 className='text-white text-5xl lg:text-6xl font-extrabold mt-3 lg:w-[90%]'>{title}</h1>
         <div className={`flex  text-2xl gap-4 text-white ${path === '/contact' ? 'mt-5 lg:mt-10' : 'mt-32'}`}>
           <span className='rounded-full flex items-center justify-center p-1 h-[3rem] w-[3rem] border-[3px] hover:text-orange-700 hover:bg-white transition ease-in-out duration-300'>
             <FaFacebook />
@@ -43,8 +43,8 @@ function ContactHeader({ title, pageTitle }) {
               <IoIosMail />
             </div>
             <div className='flex flex-col gap-1'>
-              <h3 className='font-semibold md:font-bold lg:font-semibold text-lg md:text-2xl lg:text-lg'>Mail Us</h3>
-              <a href='mailto:ihimworld@gmail.com'>ihimworld@gmail.com</a>
+              <h3 className='font-semibold md:font-bold lg:font-semibold text-base md:text-2xl xl:text-lg'>Mail Us</h3>
+              <a className='text-sm xl:text-base' href='mailto:ihimworld@gmail.com'>ihimworld@gmail.com</a>
               {/* <p>ihim@kochi.in</p> */}
 
             </div>
@@ -54,9 +54,9 @@ function ContactHeader({ title, pageTitle }) {
               <BsTelephoneFill />
             </div>
             <div className='flex flex-col gap-1'>
-              <h3 className='font-semibold md:font-bold lg:font-semibold text-lg md:text-2xl lg:text-lg'>Call Us</h3>
-              <a href="tel:+919946646651">+919946646651</a>
-              <a href="tel:+919567851158">+919567851158</a>
+              <h3 className='font-semibold md:font-bold lg:font-semibold text-base md:text-2xl xl:text-lg'>Call Us</h3>
+              <a className='text-sm xl:text-base' href="tel:+919946646651">+919946646651</a>
+              <a className='text-sm xl:text-base' href="tel:+919567851158">+919567851158</a>
             </div>
           </div>
           <div className='bg-white flex pl-3 lg:pl-6  lg:w-1/3 gap-7 items-center rounded-xl py-4 lg:py-10'>
@@ -64,8 +64,8 @@ function ContactHeader({ title, pageTitle }) {
               <ImLocation />
             </div>
             <div className='flex flex-col gap-1'>
-              <h3 className='font-semibold md:font-bold lg:font-semibold text-lg md:text-2xl lg:text-lg'>Locate Us</h3>
-              <p>193 A, PARC, <br />
+              <h3 className='font-semibold md:font-bold lg:font-semibold text-base md:text-2xl xl:text-lg'>Locate Us</h3>
+              <p className='text-sm'>193 A, PARC, <br />
                Kalavath Road, <br /> Near BSNL, Palarvattom PO, <br /> Kochi-682025.</p>
             </div>
           </div>

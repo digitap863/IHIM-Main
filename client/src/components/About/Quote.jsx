@@ -15,7 +15,7 @@ function Quote() {
                 <p className='italic  lg:font-bold text-xl md:text-2xl lg:text-3xl font-petrona text-justify lg:w-[40%]'> Things do not grow better; they remain
                     as they are. It is we who grow better, By
                     the changes we make in ourselves.</p>
-                <p className='absolute -bottom-[7%] lg:bottom-[10%] left-[45%] lg:left-[18%]'>-Swami  Vivekananda</p>
+                <p className='absolute -bottom-[7%] lg:-bottom-11 md:left-10 xl:bottom-[10%] left-[45%] lg:left-[18%]'>-Swami  Vivekananda</p>
                 <img src={yogaGirl} alt="" className='md:w-[40%] lg:w-[20%] relative z-10' />
             </div>
         </div>

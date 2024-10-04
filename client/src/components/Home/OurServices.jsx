@@ -47,23 +47,23 @@ function OurServices() {
       <h1 className='text-[#1A5D1A] font-stoke text-2xl md:text-4xl'>KARMAKSHETRA</h1>
       <h5 className='font-semibold my-1'>(Innovative human resource applications)</h5>
       <p className='text-center text-tiny mb-5 md:text-base mt-2'>The Multi Faceted Activity Hub. <br />  Iha karmena shri sambhavati.</p>
-      <div className='flex flex-col md:flex-row gap-8 justify-center mx-5 lg:mx-28 mb-10 relative z-10'>
+      <div className='flex flex-col md:flex-row gap-5 justify-center mx-5 lg:mx-28 mb-10 relative z-10'>
         <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
-          <img src={services1} alt="" className='w-[24%]' />
+          <img src={services1} alt="" className='w-[24%] object-contain' />
           <h4 className='font-[500] text-2xl mt-4 text-[#1A5D1A] font-stoke'>SATV AKADEMIA</h4>
           <h5 className='font-semibold mb-1'>Education & Training</h5>
-          <ul className='text-sm text-center'>
+          <ul className='text-sm text-center md:text-left xl:text-center'>
             <li>Management studies & Training</li>
             <li>Skill development studies & Training</li>
             <li>Awareness Program</li>
           </ul>
         </div>
         <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
-          <img src={services2} alt="" className='w-[24%]' />
+          <img src={services2} alt="" className='w-[24%] object-contain' />
           <h4 className='font-[500] text-2xl lg:text-2xl mt-4 text-[#1A5D1A] font-stoke'>LITTLE HUTS</h4>
           <h5 className='font-semibold mb-1'>Hospitality & Tourism</h5>
           <h5 className='mb-1 font-[500]'>Innovative Tourism Services</h5>
-          <ul className='text-sm text-center'>
+          <ul className='text-sm text-center md:text-left xl:text-center'>
             <li>Edu-Tourism</li>
             <li>Eco-Tourism</li>
             <li>Adventure Tourism</li>
@@ -71,13 +71,13 @@ function OurServices() {
             <li>Festival Tourism</li>
           </ul>
           <h5 className='my-1 font-[500]'>Health Care Services</h5>
-         <p>Screening / Referral / Research</p>
+         <p className='text-sm'>Screening / Referral / Research</p>
         </div>
         <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
-          <img src={services3} alt="" className='w-[24%]' />
+          <img src={services3} alt="" className='w-[24%] object-contain' />
           <h4 className='font-[500] text-2xl lg:text-2xl mt-4 text-[#1A5D1A] font-stoke'>SWEN HERITAGE</h4>
           <h5 className='font-semibold mb-1 text-center'>Theatre for Evenets</h5>
-          <ul className='text-sm text-center'>
+          <ul className='text-sm text-center md:text-left xl:text-center'>
             <li>Social, Cultural, Art, literary</li>
             <li>HRD & Educational Events</li>
           </ul>
