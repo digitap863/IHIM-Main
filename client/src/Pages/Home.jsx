@@ -14,7 +14,7 @@ import { ChevronDoubleRightIcon } from '@heroicons/react/24/solid'
 
 function Home() {
     return (
-            <div className='max-w-[1920px] mx-auto'>
+        <div className='max-w-[1920px] mx-auto'>
             <div className='h-screen bg-gradient-to-br from-[#258425] to-[#85A231] relative overflow-hidden font-mont'>
                 <Navbar />
                 <img src={ellipse1} alt="ellipse1" className='absolute -left-[20%] -top-[60%] z-0 opacity-90 w-[40%]' />

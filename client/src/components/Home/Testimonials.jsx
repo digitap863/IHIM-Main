@@ -2,6 +2,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import "swiper/css/autoplay";
 import stars from '../../assets/Images/Home/stars.png'
 import testi1 from '../../assets/Images/Home/testi1.png'
 import testi2 from '../../assets/Images/Home/testi2.png'
@@ -50,13 +51,13 @@ function Testimonials() {
             <img src={leaf} alt="" className='absolute w-[20%] lg:w-[10%]  top-[10%] -right-[2%] rotate-90' />
             <img src={leafM} alt="" className='absolute w-[20%] lg:w-[11%]  bottom-[5%] -left-[2%] -rotate-90' />
             <h1 className='text-[#1A5D1A] font-bold text-center lg:text-left text-[2.4rem] lg:text-5xl'>OUR CUSTOMER EXPERIENCES</h1>
-            <div className='flex w-[90%] mt-16 relative'>
+            <div className='flex w-full mt-16 relative max-w-screen-xl'>
 
                     <Swiper
                         modules={[Autoplay]}
-                        className='flex'
+                        className='flex w-full p-10'
                         spaceBetween={45}
-                        autoplay={{ delay: 1500 }}
+                        autoplay={true}
                         loop={true}
                         breakpoints={{
                             // when window width is less than 640px (mobile)
@@ -72,10 +73,11 @@ function Testimonials() {
                                 slidesPerView: 3,
                             },
                         }}
+   
                     >
-                        {users.map((elem) => (
-                            <SwiperSlide className='w-full' key={elem.name}>
-                                <div className='h-[26rem] shadow-2xl flex flex-col justify-between items-center rounded-2xl lg:rounded-[3rem] relative bg-white'>
+                        {users.map((elem,i) => (
+                            <SwiperSlide className='w-full' key={i}>
+                                <div className='h-[26rem] shadow-inner flex flex-col justify-between items-center rounded-2xl lg:rounded-[3rem] relative bg-[#f5f5f5]'>
                                     <h2 className='text-xl mt-7 font-semibold'>{elem.name}</h2>
                                     <img src={stars} alt="stars" className='-mt-10 w-[35%]' />
                                     <img src={elem.img} alt="user" className='w-[25%] absolute top-[28%] z-10' />
