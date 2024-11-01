@@ -7,7 +7,7 @@ import ManBehind from '../components/About/ManBehind'
 import Quote from '../components/About/Quote'
 import VisionMission from '../components/Home/VisionMission'
 import ContactUs from '../components/Shared/ContactUs'
-import Testimonials from '../components/Home/Testimonials'
+// import Testimonials from '../components/Home/Testimonials'
 import FounderMessage from '../components/About/FounderMessage'
 
 function About() {
@@ -19,7 +19,7 @@ function About() {
         <Quote/>
         <VisionMission/>
         <FounderMessage/>
-        <Testimonials/>
+        {/* <Testimonials/> */}
         <ContactUs/>
        </Layout>
     </div>

@@ -5,7 +5,7 @@ import OurServices from '../components/Home/OurServices'
 import VisionMission from '../components/Home/VisionMission'
 import Footer from '../components/Shared/Footer'
 import ContactUs from '../components/Shared/ContactUs'
-import Testimonials from '../components/Home/Testimonials'
+// import Testimonials from '../components/Home/Testimonials'
 import girl from '../assets/Images/Shared/girl-swinging.png'
 import Navbar from '../components/Navbar'
 import ellipse1 from '../assets/Images/Shared/Ellipse1.png'
@@ -37,7 +37,7 @@ function Home() {
                 <AboutUs title={"ABOUT US"} content={`Welcome to our captivating activities that promise excitement and enrichment. Dive into thrilling adventures, connect with local cultures, and explore nature's wonders. From adrenaline-pumping escapades to serene escapes, our activities cater to all interests.`} />
                 <OurServices />
                 <VisionMission />
-                <Testimonials />
+                {/* <Testimonials /> */}
                 <ContactUs />
                 <Footer />
             </div>

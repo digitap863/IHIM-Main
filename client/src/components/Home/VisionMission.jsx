@@ -17,14 +17,16 @@ function VisionMission() {
                     <div className='flex flex-col md:flex-row relative p-3 '>
                         <div className='md:w-[50%] flex flex-col justify-center items-center mt-10 lg:mt-0 lg:p-10'>
                             <img src={mission1} alt="" className='w-[60%] lg:w-[40%] ' />
-                            <h3 className='text-[#1A5D1A] text-3xl font-bold my-4'>Our Vision</h3>
+                            <h3 className='text-[#1A5D1A] text-3xl font-bold mt-4 mb-1'>Our Vision</h3>
+                            <h6 className='text-[#1A5D1A] text-xl font-semibold mb-4'>Development and Happiness of all</h6>
                             <p className='md:w-[90%] lg:w-[80%] text-justify
                          leading-relaxed text-sm lg:text-[1rem]'>Empower individuals worldwide to unlock their full potential through a movement dedicated to human resource development. We blend the profound insights of Eastern and Western Personality Development and Management theories, creating a transformative journey towards self-realisation, skill enhancement, and overall well-being.</p>
 
                         </div>
                         <div className='md:w-[50%] flex flex-col justify-center items-center   lg:p-10'>
                             <img src={mission2} alt="" className='w-[60%] lg:w-[40%] md:mt-10 lg:mt-0' />
-                            <h3 className='text-[#1A5D1A] text-3xl font-bold my-4'>Our Mission</h3>
+                            <h3 className='text-[#1A5D1A] text-3xl font-bold mt-4 mb-1'>Our Mission</h3>
+                            <h6 className='text-[#1A5D1A] text-xl font-semibold mb-4 text-center leading-tight'>Empowering Human Transformation <br/> through scientific methods</h6>
                             <p className='md:w-[90%] lg:w-[80%] text-justify leading-relaxed text-sm lg:text-[1rem]'>Foster a global community of empowered individuals who have harnessed their Human Resource Potentials, transforming them into valuable Human Resource Capitals. Our vision is to bridge East and West, cultivating a dynamic space where individuals thrive in personal and professional capacities, contributing to a world enriched by the collective development and happiness of its members.</p>
                         </div>
                     </div>
