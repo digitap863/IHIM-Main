@@ -4,7 +4,7 @@ import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FaFacebook, FaLinkedinIn } from 'react-icons/fa';
 import { BiLogoInstagramAlt } from 'react-icons/bi';
-import lOGO from '../assets/Images/Home/lOGO.png'
+// import lOGO from '../assets/Images/Home/lOGO.png'
 
 function Navbar() {
   let Links = [
@@ -64,18 +64,18 @@ function Navbar() {
     <div className='w-full fixed top-0 left-0 z-30'>
       <div className={`${scrolling == 'text-[#1A5D1A]' ? 'bg-[#f5f5f5]' : ''} px-10`}>
 
-        <div className={`lg:flex  items-center justify-between py-2 md:px-10 px-7 lg:px-0 max-w-screen-2xl mx-auto`}>
+        <div className={`lg:flex  items-center justify-between py-4 md:px-10 px-7 lg:px-0 max-w-screen-2xl mx-auto`}>
 
           {/* logo section */}
           <div className='font-bold text-2xl flex items-center gap-1 '>
             {/* <BookOpenIcon className='w-7 h-7 text-blue-600'/> */}
-            {/* <h5 onClick={() => {
+            <h5 onClick={() => {
               navigate('/')
 
             }} 
-            className={` ${path === '/gallery' || path === '/all-services' || open ? 'text-[#1A5D1A]' : scrolling} relative cursor-pointer z-0 font-mont `} >IHIM</h5> */}
+            className={` ${path === '/gallery' || path === '/all-services' || open ? 'text-[#1A5D1A]' : scrolling} relative cursor-pointer z-0 font-mont `} >IHIM</h5>
 
-            <img src={lOGO} alt="logo" className='h-auto w-20'/>
+            {/* <img src={lOGO} alt="logo" className='h-auto w-20'/> */}
           </div>
 
 

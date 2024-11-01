@@ -7,6 +7,8 @@ import leaf from '../../assets/Images/Shared/leaf.png'
 import leafM from '../../assets/Images/Shared/leafMirror.png'
 import bubble from '../../assets/Images/Shared/Ellipse1.png'
 import ks from '../../assets/Images/Services/karmakshetra.png'
+import lOGO from '../../assets/Images/Home/lOGO.png'
+
 
 function OurServices() {
   const [showMore, setShowMore] = useState('truncate');
@@ -43,7 +45,7 @@ function OurServices() {
       {!showMore.length == 0 && (
         <button onClick={toggleText} className='md:hidden'>See More</button>
       )}
-      <img src={ks} className='w-[25%] md:w-[20%] xl:w-[10%] mb-8   ' alt="" />
+      <img src={lOGO} className='w-[25%] md:w-[20%] xl:w-[10%] mb-8   ' alt="" />
       <h1 className='text-[#1A5D1A] font-stoke text-2xl md:text-4xl'>IHIM KARMAKSHETRA</h1>
       <h5 className='font-semibold my-1'>(Innovative human resource applications)</h5>
       <p className='text-center text-tiny mb-5 md:text-base mt-2'>The Multi Faceted Activity Hub. <br />  Iha karmena shri sambhavati.</p>
