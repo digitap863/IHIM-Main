@@ -18,7 +18,9 @@ import leaf from '../../assets/Images/Shared/leaf.png'
 import leafM from '../../assets/Images/Shared/leafMirror.png'
 import bubble from '../../assets/Images/Shared/Ellipse1.png'
 import '../CustomCss/Animation.css'
-import ks from '../../assets/Images/Services/karmakshetra.png'
+// import ks from '../../assets/Images/Services/karmakshetra.png'
+import lOGO from '../../assets/Images/Home/lOGO.png'
+
 import { useNavigate } from 'react-router-dom';
 
 function ServicesPreview() {
@@ -57,14 +59,16 @@ function ServicesPreview() {
             {!showMore.length == 0 && (
                 <button onClick={toggleText} className='md:hidden'>See More</button>
             )}
-            <img src={ks} className='w-[25%] md:w-[20%] xl:w-[10%] my-5' alt="" />
-            <h1 className='text-[#1A5D1A] font-stoke text-2xl md:text-3xl'>KARMAKSHETRA</h1>
+            {/* <img src={ks} className='w-[25%] md:w-[20%] xl:w-[10%] my-5' alt="" /> */}
+            <img src={lOGO} className='w-[25%] md:w-[20%] xl:w-[10%] my-5' alt="" />
+
+            <h1 className='text-[#1A5D1A] font-stoke text-2xl md:text-3xl'>IHIM KARMAKSHETRA</h1>
             <h5 className='font-semibold my-1'>Innovative human resource applications</h5>
             <p className='text-center text-tiny mb-5 md:text-sm mt-2'>Professional Facilitation hubs. <br />  Development and Happiness through activities.</p>
             <div className='flex flex-col lg:flex-row justify-center  gap-10 '>
                 <div className='border rounded-2xl shadow-lg pt-10 pb-24 flex flex-col items-center relative gap-7 lg:w-[33%] bg-white'>
                     <img src={services1} alt="" className='w-[30%]' />
-                    <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl'>SATV AKADEMIA</h1>
+                    <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl px-1 text-center'>IHIM SATV AKADEMIA</h1>
                     <div className='flex flex-col px-10 font-medium gap-2 items-start w-full'>
                         <p className='flex items-center gap-2'><span className='text-4xl text-[#1A5D1A]'><IoMan /></span>Education and Training</p>
                         <ul className='ml-10 list-disc'>
@@ -79,7 +83,7 @@ function ServicesPreview() {
                 </div>
                 <div className='border rounded-2xl shadow-lg pt-10 pb-24 flex flex-col items-center relative gap-7 lg:w-[33%] bg-white'>
                     <img src={services2} alt="" className='w-[30%]' />
-                    <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl'>LITTLE HUTS</h1>
+                    <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl'>IHIM LITTLE HUTS</h1>
                     <div className='flex flex-col px-10 font-medium items-start w-full gap-2'>
                         <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Hospitality & Tourism</p>
                         <p className='flex items-center gap-2'><span className='text-3xl text-[#1A5D1A]'><BsCalendar2DateFill /></span>Innovative Tourism Services</p>
@@ -98,7 +102,7 @@ function ServicesPreview() {
                 </div>
                 <div className='border rounded-2xl shadow-lg pt-10 pb-24 flex flex-col items-center relative gap-7 lg:w-[33%] bg-white'>
                     <img src={services3} alt="" className='w-[30%]' />
-                    <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl'>SWEN HERITAGE</h1>
+                    <h1 className='text-[#1A5D1A] font-[500] font-stoke text-2xl lg:text-2xl px-1 text-center'>IHIM SWEN HERITAGE</h1>
                     <div className='flex flex-col px-10 font-medium items-start w-full gap-2'>
                         <p className='flex items-center gap-3'><span className='text-3xl text-[#1A5D1A]'><TbBookFilled /></span>Theatre for Events  </p>
                         <ul className='ml-10 list-disc'>
