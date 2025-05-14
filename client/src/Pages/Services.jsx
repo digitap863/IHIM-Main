@@ -8,7 +8,7 @@ import ServicesPreview from '../components/Services/ServicesPreview'
 function Services() {
   return (
     <div>
-      <Layout header={<Header title={"Our services differ from others"} pageTitle={'SERVICES'} subtitle={"Building the right attitude to personal growth that leads to career growth."} img={headerImage} />}>
+      <Layout header={<Header title={"What we offer"} pageTitle={'SERVICES'} subtitle={"We develop Human Resources from potential to growth through scientific methods"} img={headerImage} />}>
         <ServicesPreview />
         <ContactUs />
       </Layout>

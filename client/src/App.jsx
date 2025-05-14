@@ -19,7 +19,7 @@ const FallbackUI = () => <div className="preloader loaded-success fixed top-0 in
           {/* <img className='relative animate-bounce inline-flex rounded-full h-10' src={logo} alt="" /> */}
           {/* <span className='relative animate-bounce inline-flex rounded-full h-10 w-10'></span> */}
           {/* <Spinner color="success" className='!w-[5rem]' /> */}
-          <h1 className='font-bold text-3xl animate-ping'>IHIM</h1>
+          <h1 className='font-bold text-3xl animate-ping'>IHA</h1>
         </span>
       </div>
     </div>

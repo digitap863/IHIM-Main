@@ -13,9 +13,9 @@ function Footer() {
             </div>
             <div className='font-normal flex flex-col gap-1 lg:gap-4'>
                 <h2 className='text-xl lg:text-3xl font-bold mb-4'>Contact Us</h2>
-                <a className='text-sm xl:text-base' href="mailto:ihimworld@gmail.com">ihimworld@gmail.com</a>
+                <a className='text-sm xl:text-base' href="mailto:ask4iha@gmail.com">ask4iha@gmail.com</a>
                 <a className='text-sm xl:text-base' href="tel:+919567851158">+919567851158</a>
-                <a className='text-sm xl:text-base' href="tel:+919946646651">+919946646651</a>
+                <a className='text-sm xl:text-base' href="tel:+919495089436">+919495089436</a>
             </div>
             <div>
                 <h2 className='text-xl lg:text-3xl font-bold mb-3 lg:mb-9'>Address</h2>

@@ -13,11 +13,12 @@ function ManBehind() {
         <img src={bubble} alt="" className='absolute w-[10%] left-10 z-10 opacity-20 bottom-32 bubble2'/>
         <img src={bubble} alt="" className='absolute w-[20%] left-10 z-10 opacity-20 -top-20'/>
 
-       <h1 className=' mb-5 font-bold text-4xl lg:text-5xl text-[#1A5D1A] text-center'>MEET THE MAN BEHIND IHIM</h1> 
+       <h1 className=' mb-5 font-bold text-4xl lg:text-5xl text-[#1A5D1A] text-center'>MEET THE MAN BEHIND IHA</h1> 
         <div className='flex mx-5 lg:mx-40 items-center flex-col-reverse lg:flex-row gap-28 mt-16  justify-center'>
             <div className='lg:w-[60%]'>
                 <h3 className='text-2xl font-bold text-center lg:text-left mb-5'>SANTHOSH KUMAR.A</h3>
-                <p className='leading-loose font-[400] text-center lg:text-left'>Santhosh Kumar. A, is the visionary behind the International Human resource improvement Movement. He is the third generation descendant of Kairali Vidheyan Shri Rama Varma Appan Thampuran. The architect of the Cultural Capital of Kerala, Shri. Thampuran has trained and guided many to reach the peaks of recognitions. The career and other history of Santhosh clearly show that he is continuing the still prevailing visions & missions of Shri. Appan Thampuran. Santhosh has transformed many from all walks of life to reach greater heights of success and recognitions through his unique HR potential development process. He is the visionary behind conceiving, researching, developing, designing and managing the International Human resource improvement Movement (IHIM).</p>
+                <p className='leading-loose font-[400] text-center lg:text-left'>Santhosh Kumar. A, is the visionary behind the International Human Resource Improvement Movement. He is the third generation descendant of Kairali Vidheyan Shri Rama Varma Appan Thampuran. The architect of the Cultural Capital of Kerala, Shri. Thampuran has trained and guided many to reach the peaks of recognition. The career and other history of Santhosh clearly show that he is continuing the still prevailing visions & missions of Shri. Appan Thampuran. He is currently spear-heading the Appan Thapuran study and research, officially named Appan Thampuran Padana Geveshna Samathi <br />
+                Santhosh has transformed many people from all walks of life to reach greater heights of success and recognition through his unique HR potential development process. He is the visionary behind conceiving, researching, developing, designing, and managing the International Human Resource Movement.</p>
             </div>
             <div className='lg:w-[25%] flex justify-center'>
                 <img src={holder} alt="" className='w-[90%] relative z-10'/>

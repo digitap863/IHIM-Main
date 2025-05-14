@@ -1,93 +1,136 @@
-import React, { useState } from 'react'
-import services1 from '../../assets/Images/Home/services1.png'
-import services2 from '../../assets/Images/Home/services2.png'
-import services3 from '../../assets/Images/Home/services3.png'
-import { ChevronDoubleRightIcon } from '@heroicons/react/24/solid'
-import leaf from '../../assets/Images/Shared/leaf.png'
-import leafM from '../../assets/Images/Shared/leafMirror.png'
-import bubble from '../../assets/Images/Shared/Ellipse1.png'
-import ks from '../../assets/Images/Services/karmakshetra.png'
-import lOGO from '../../assets/Images/Home/lOGO.png'
+import React, { useState } from "react";
+import services2 from "../../assets/Images/Home/services2.png";
+import services3 from "../../assets/Images/Home/services3.png";
+import { ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
+import leaf from "../../assets/Images/Shared/leaf.png";
+import leafM from "../../assets/Images/Shared/leafMirror.png";
+import bubble from "../../assets/Images/Shared/Ellipse1.png";
+import lOGO from "../../assets/Images/Home/lOGO.png";
+import sd1 from "../../assets/Images/Services/sd1.png";
+import ihaLogo from "../../assets/Images/Home/ihalogo.jpeg";
 
 
 function OurServices() {
-  const [showMore, setShowMore] = useState('truncate');
+  const [showMore, setShowMore] = useState("truncate");
   const toggleText = () => {
     if (showMore.length === 0) {
-      setShowMore('truncate')
+      setShowMore("truncate");
     } else {
-      setShowMore('')
+      setShowMore("");
     }
   };
   return (
-    <div className='flex justify-center flex-col font-mont items-center mb-20 relative'>
-      <img src={leaf} alt="" className='absolute w-[10%] -left-[2%] -rotate-90 top-[50%]' />
-      <img src={leafM} alt="" className='absolute w-[20%] lg:w-[10%] top-0 -right-[2%] rotate-90 lg:top-[20%]' />
-      <img src={bubble} alt="" className='absolute w-[20%] opacity-5 bottom-[10%] -right-[10%] z-0' />
-      <img src={bubble} alt="" className='absolute w-[10%] opacity-20 bottom-[10%] right-[2%] z-0' />
-      <img src={bubble} alt="" className='absolute w-[10%] opacity-20 bottom-[2%] left-[4%] z-0' />
-      <h1 className='text-[#1A5D1A] font-bold text-3xl md:text-5xl'>OUR HUBS DIVISIONS</h1>
-      <p className='w-[80%] md:w-[50%] text-center hidden md:block my-4'>{`IHA Karnakshethras are the centers of  "ihavasa sutra" the solution  provider sutra for all Real Life Situations. Other three faces of services which happen under IHIM are LITTLEHUTS, SATV AKADEMIA and SWEN HERITAGE.`}</p>
-      {/* <p className='w-[80%] md:w-[50%] text-center hidden md:block my-4'>{`The multidisciplinary Hub where "IHA karmena shri sambhavathi '' reigns, meaning 'here SHRI is attained through engagement in activities,' with SHRI representing Development & Happiness. By Giving Three faces to the activity which happens under karmakshetra which is Little huts, satv akademia and swen heritage`}</p> */}
+    <div className="flex justify-center flex-col font-mont items-center mb-20 relative">
+      <img
+        src={leaf}
+        alt=""
+        className="absolute w-[10%] -left-[2%] -rotate-90 top-[50%]"
+      />
+      <img
+        src={leafM}
+        alt=""
+        className="absolute w-[20%] lg:w-[10%] top-0 -right-[2%] rotate-90 lg:top-[20%]"
+      />
+      <img
+        src={bubble}
+        alt=""
+        className="absolute w-[20%] opacity-5 bottom-[10%] -right-[10%] z-0"
+      />
+      <img
+        src={bubble}
+        alt=""
+        className="absolute w-[10%] opacity-20 bottom-[10%] right-[2%] z-0"
+      />
+      <img
+        src={bubble}
+        alt=""
+        className="absolute w-[10%] opacity-20 bottom-[2%] left-[4%] z-0"
+      />
+      <h1 className="text-[#1A5D1A] font-bold text-3xl md:text-5xl">
+        OUR SERVICES
+      </h1>
+      <p className="w-[80%] md:w-[50%] text-center hidden md:block my-4">{`IHA Karnakshethras are the centers of  "ihavasa sutra" the solution  provider sutra for all Real Life Situations. `}</p>
+
       <p
-        className={`w-[80%] md:w-[50%] text-center md:hidden my-4 ${showMore
-          }`}
+        className={`w-[80%] md:w-[50%] text-center md:hidden my-4 ${showMore}`}
       >
-        {`IHA Karnakshethras are the centers of  "ihavasa sutra" the solution  provider sutra for all Real Life Situations. Other three faces of services which happen under IHIM are LITTLEHUTS, SATV AKADEMIA and SWEN HERITAGE.`}
+        {`IHA Karnakshethras are the centers of  "ihavasa sutra" the solution  provider sutra for all Real Life Situations.`}
       </p>
-      {/* <p
-          className={`w-[80%] md:w-[50%] text-center md:hidden my-4 ${
-            showMore
-          }`}
-        >
-          {`The multidisciplinary Hub where "IHA karmena shri sambhavathi '' reigns, meaning 'here SHRI is attained through engagement in activities,' with SHRI representing Development & Happiness. By Giving Three faces to the activity which happens under karmakshetra which is Little huts, satv akademia and swen heritage`}
-        </p> */}
+
       {!showMore.length == 0 && (
-        <button onClick={toggleText} className='md:hidden'>See More</button>
+        <button onClick={toggleText} className="md:hidden">
+          See More
+        </button>
       )}
-      <img src={lOGO} className='w-[25%] md:w-[20%] xl:w-[10%] mb-8   ' alt="" />
-      <h1 className='text-[#1A5D1A] font-stoke text-2xl md:text-4xl'>IHIM KARMAKSHETRA</h1>
-      <h5 className='font-semibold my-1'>(Innovative human resource applications)</h5>
-      <p className='text-center text-tiny mb-5 md:text-base mt-2'>The Multi Faceted Activity Hub. <br />  Iha karmena shri sambhavati.</p>
-      <div className='flex flex-col md:flex-row gap-5 justify-center mx-5 lg:mx-28 mb-10 relative z-10'>
-        <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
-          <img src={services1} alt="" className='w-[24%] object-contain' />
-          <h4 className='font-[500] text-2xl mt-4 text-[#1A5D1A] font-stoke text-center'>IHIM SATV AKADEMIA</h4>
-          <h5 className='font-semibold mb-1'>Education & Training</h5>
-          <ul className='text-sm text-center md:text-left xl:text-center'>
-            <li>Management studies & Training</li>
-            <li>Skill development studies & Training</li>
-            <li>Awareness Program</li>
-          </ul>
+      <img
+        src={ihaLogo}
+        className="w-[25%] md:w-[20%] xl:w-[20%] mb-8   "
+        alt=""
+      />
+      <h1 className="text-[#1A5D1A] font-stoke text-2xl md:text-4xl">IHA </h1>
+      <h5 className="font-semibold my-1">
+        (Innovative human resource applications)
+      </h5>
+      <p className="text-center text-tiny mb-5 md:text-base mt-2">
+        The Multi Faceted Activity Hub. <br /> Iha karmena shri sambhavati.
+      </p>
+      <div className="flex flex-col md:flex-row gap-5 justify-center mx-5 lg:mx-28 mb-10 relative z-10">
+        <div className="border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]">
+          <img src={sd1} alt="" className="w-[24%] object-contain" />
+          <h4 className="font-[500] text-2xl mt-4 text-[#1A5D1A] font-stoke text-center uppercase">
+            IHA Education and Training
+          </h4>
+
+          <div className="flex flex-col px-8 font-medium gap-4 items-start w-full mt-5">
+            <ul className="list-disc space-y-2">
+              <li>Human Resource Potential Development & Specialized Training Programs</li>
+              <li>Transformative Self-improvement Techniques & Life Skills</li>
+              <li>Evidence-based Solutions for Real-life Challenges</li>
+              <li>Comprehensive Education Programs</li>
+              <li>Management studies & Leadership Training</li>
+              <li>Advanced Skill Development</li>
+              <li>Community Awareness Programs</li>
+            </ul>
+          </div>
         </div>
-        <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
-          <img src={services2} alt="" className='w-[24%] object-contain' />
-          <h4 className='font-[500] text-2xl lg:text-2xl mt-4 text-[#1A5D1A] font-stoke text-center'>IHIM LITTLE HUTS</h4>
-          <h5 className='font-semibold mb-1'>Hospitality & Tourism</h5>
-          <h5 className='mb-1 font-[500]'>Innovative Tourism Services</h5>
-          <ul className='text-sm text-center md:text-left xl:text-center'>
-            <li>Edu-Tourism</li>
-            <li>Eco-Tourism</li>
-            <li>Adventure Tourism</li>
-            <li>Wellness Tourism</li>
-            <li>Festival Tourism</li>
-          </ul>
-          <h5 className='my-1 font-[500]'>Health Care Services</h5>
-         <p className='text-sm'>Screening / Referral / Research</p>
+        <div className="border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]">
+          <img src={services2} alt="" className="w-[24%] object-contain" />
+          <h4 className="font-[500] text-2xl lg:text-2xl mt-4 text-[#1A5D1A] font-stoke text-center">
+            IHA HOTELS & <br /> HOSTELS
+          </h4>
+
+          <div className="flex flex-col px-8  font-medium items-start w-full gap-4 mt-5">
+            <ul className=" list-disc space-y-2">
+              <li>Immersive Experiential Stay Programs</li>
+              <li>Authentic Cultural Immersion Experiences</li>
+              <li>Rejuvenating Nature Retreat Programs</li>
+              <li>Holistic Wellness & Renewal Packages</li>
+              <li>Traditional Kerala Hospitality Services</li>
+              <li>Curated Local Cultural Experiences</li>
+            </ul>
+          </div>
         </div>
-        <div className='border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]'>
-          <img src={services3} alt="" className='w-[24%] object-contain' />
-          <h4 className='font-[500] text-2xl lg:text-2xl mt-4 text-[#1A5D1A] font-stoke text-center'>IHIM SWEN HERITAGE</h4>
-          <h5 className='font-semibold mb-1 text-center'>Theatre for Evenets</h5>
-          <ul className='text-sm text-center md:text-left xl:text-center'>
-            <li>Social, Cultural, Art, literary</li>
-            <li>HRD & Educational Events</li>
-          </ul>
+        <div className="border rounded-2xl shadow-xl flex flex-col bg-white items-center p-5 lg:p-10 lg:w-[33%]">
+          <img src={services3} alt="" className="w-[24%] object-contain" />
+          <h4 className="font-[500] text-2xl lg:text-2xl mt-4 text-[#1A5D1A] font-stoke text-center">
+            IHA EVENTS
+          </h4>
+
+          <div className="flex flex-col px-8 font-medium items-start w-full gap-4 mt-5">
+            <ul className=" list-disc space-y-2">
+              <li>Cultural, Artistic & Literary Celebrations</li>
+              <li>Human Resource Development Conferences</li>
+              <li>Educational Forums & Interactive Workshops</li>
+              <li>Community Engagement Programs</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <button className='flex gap-2 items-center border-[3px] text-[#1A5D1A] py-1.5 px-2.5 font-semibold rounded-lg border-[#1A5D1A] hover:bg-green-100'>Explore Now <ChevronDoubleRightIcon className='w-5' /></button>
+      <button className="flex gap-2 items-center border-[3px] text-[#1A5D1A] py-1.5 px-2.5 font-semibold rounded-lg border-[#1A5D1A] hover:bg-green-100">
+        Explore Now <ChevronDoubleRightIcon className="w-5" />
+      </button>
     </div>
-  )
+  );
 }
 
-export default OurServices
+export default OurServices;

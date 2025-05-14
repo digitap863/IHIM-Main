@@ -16,7 +16,7 @@ function ContactUs() {
                     <img src={bubble} alt="" className='absolute w-[17%] opacity-20 -rotate-45 bottom-[2%] left-[5%] z-0' />
                     <div className=' w-[90%] lg:w-[55%] flex flex-col gap-y-5 lg:gap-y-10 '>
                         <h1 className='text-2xl lg:text-5xl font-bold text-[#1A5D1A]'>Having a happier life is not complicated anymore</h1>
-                        <p className='font-[500]'>Contact us today to know more about IHIM</p>
+                        <p className='font-[500]'>Contact us today to know more about IHA</p>
                         <Input type="email" label="Email" size='md' />
                         <Button className='bg-[#EAB600] text-white font-bold my-5 lg:my-0' size='lg'>
                             Enquire Now  <ChevronDoubleRightIcon className='w-5' />
