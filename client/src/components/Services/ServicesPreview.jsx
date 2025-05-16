@@ -21,7 +21,7 @@ function ServicesPreview() {
     const navigate = useNavigate();
     
     return (
-        <section className="mx-5 xl:mx-40 flex flex-col items-center py-20 font-mont relative">
+        <section className="mx-5 xl:mx-20 flex flex-col items-center py-20 font-mont relative">
             <img
                 src={bubble}
                 alt="Decorative bubble"
@@ -58,7 +58,7 @@ function ServicesPreview() {
 
             <img src={lOGO} className="w-[50%] md:w-[20%] xl:w-[8%] my-5" alt="IHA Logo" />
 
-            <h2 className="text-[#1A5D1A]  text-2xl md:text-3xl font-lucida">IHA</h2>
+            <h2 className="text-[#1A5D1A] text-2xl md:text-3xl font-lucida">IHA</h2>
             <h3 className="font-semibold my-1 text-xl text-center font-lucida">
                 Innovative Human Resource Applications
             </h3>
@@ -67,184 +67,184 @@ function ServicesPreview() {
                 personalized development programs and happiness-focused activities.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
-                <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-8 pb-20 flex flex-col items-center relative gap-5 bg-white border-t-4 border-t-[#1A5D1A]">
-                    <img src={sd2} alt="Hospitality icon" className="w-[25%]" />
-                    <h2 className="text-[#1A5D1A] font-bold text-2xl text-center font-stoke px-4">
-                       I. IHA HOSPITALITY
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-6 w-full max-w-[1400px]">
+                <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-6 pb-20 flex flex-col items-center relative gap-3 bg-white border-t-4 border-t-[#1A5D1A]">
+                    <img src={sd2} alt="Hospitality icon" className="w-[20%]" />
+                    <h2 className="text-[#1A5D1A] font-bold text-xl text-center font-stoke px-2">
+                        I. IHA HOSPITALITY
                     </h2>
-                    <div className="flex flex-col px-8 font-medium gap-4 items-start w-full">
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
+                    <div className="flex flex-col px-4 font-medium gap-3 items-start w-full">
+                        <p className="flex items-start gap-2">
+                            <span className="text-2xl text-[#1A5D1A] mt-1">
                                 <MdHealthAndSafety />
                             </span>
-                            <span>IHA Healthcare</span>
+                            <span className="text-sm">IHA Healthcare</span>
                         </p>
-                        <ul className="ml-12 list-disc space-y-1">
+                        <ul className="ml-10 list-disc space-y-1 text-sm">
                             <li>Screening Services</li>
                             <li>Referral Services</li>
                             <li>Research Initiatives</li>
                         </ul>
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
+                        <p className="flex items-start gap-2">
+                            <span className="text-2xl text-[#1A5D1A] mt-1">
                                 <MdHotel />
                             </span>
-                            <span>Hospitality and Allied Management Studies</span>
+                            <span className="text-sm">Hospitality and Allied Management Studies</span>
                         </p>
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
+                        <p className="flex items-start gap-2">
+                            <span className="text-2xl text-[#1A5D1A] mt-1">
                                 <MdSchool />
                             </span>
-                            <span>Training for Hostel, Hotel and Hospital Jobs</span>
+                            <span className="text-sm">Training for Hostel, Hotel and Hospital Jobs</span>
                         </p>
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
+                        <p className="flex items-start gap-2">
+                            <span className="text-2xl text-[#1A5D1A] mt-1">
                                 <GiBrain />
                             </span>
-                            <span>Add-on Skill Development Studies and Practices</span>
+                            <span className="text-sm">Add-on Skill Development Studies and Practices</span>
                         </p>
                     </div>
                     <button
                         onClick={() => navigate("/all-services", { state: 300 })}
-                        className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-6 py-2.5 text-[#1A5D1A] font-semibold absolute bottom-6 hover:bg-green-100 transition-colors"
+                        className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-4 py-2 text-[#1A5D1A] font-semibold absolute bottom-4 hover:bg-green-100 transition-colors text-sm "
                         aria-label="Learn more about Hospitality"
                     >
                         Learn More <BiSolidRightArrow />
                     </button>
                 </div>
 
-                <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-8 pb-20 flex flex-col items-center relative gap-5 bg-white border-t-4 border-t-[#1A5D1A]">
-                    <img src={sd3} alt="Tourism icon" className="w-[25%]" />
-                    <h2 className="text-[#1A5D1A] font-bold text-2xl text-center font-stoke px-4">
-                      II. IHA TOURISM
+                <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-6 pb-20 flex flex-col items-center relative gap-3 bg-white border-t-4 border-t-[#1A5D1A]">
+                    <img src={sd3} alt="Tourism icon" className="w-[20%]" />
+                    <h2 className="text-[#1A5D1A] font-bold text-xl text-center font-stoke px-2">
+                        II. IHA TOURISM
                     </h2>
-                    <div className="flex flex-col px-8 font-medium items-start w-full gap-4">
-                        <ul className="ml-12 space-y-2">
+                    <div className="flex flex-col px-4 font-medium items-start w-full gap-3">
+                        <ul className="ml-10 space-y-2">
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <GiBrain />
                                 </span>
-                                Eco Tourism
+                                <span className="text-sm">Eco Tourism</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <GiMountainClimbing />
                                 </span>
-                                Adventure Tourism
+                                <span className="text-sm">Adventure Tourism</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <MdChurch />
                                 </span>
-                                Religious Tourism
+                                <span className="text-sm">Religious Tourism</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <GiPartyPopper />
                                 </span>
-                                Festival Tourism
+                                <span className="text-sm">Festival Tourism</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <GiGraduateCap />
                                 </span>
-                                Educational Tourism
+                                <span className="text-sm">Educational Tourism</span>
                             </li>
                         </ul>
                     </div>
                     <button
                         onClick={() => navigate("/all-services", { state: 1000 })}
-                        className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-6 py-2.5 text-[#1A5D1A] font-semibold absolute bottom-6 hover:bg-green-100 transition-colors"
+                        className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-4 py-2 text-[#1A5D1A] font-semibold absolute bottom-4 hover:bg-green-100 transition-colors text-sm"
                         aria-label="Learn more about Tourism"
                     >
                         Learn More <BiSolidRightArrow />
                     </button>
                 </div>
 
-                <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-8 pb-20 flex flex-col items-center relative gap-5 bg-white border-t-4 border-t-[#1A5D1A]">
-                    <img src={sd1} alt="Academia icon" className="w-[25%]" />
-                    <h2 className="text-[#1A5D1A] font-bold text-2xl text-center font-stoke px-4">
+                <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-6 pb-20 flex flex-col items-center relative gap-3 bg-white border-t-4 border-t-[#1A5D1A]">
+                    <img src={sd1} alt="Academia icon" className="w-[20%]" />
+                    <h2 className="text-[#1A5D1A] font-bold text-xl text-center font-stoke px-2">
                         III. IHA ACADEMIA
                     </h2>
-                    <div className="flex flex-col px-8 font-medium items-start w-full gap-4">
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
+                    <div className="flex flex-col px-4 font-medium items-start w-full gap-3">
+                        <p className="flex items-start gap-2">
+                            <span className="text-2xl text-[#1A5D1A] mt-1">
                                 <TbBookFilled />
                             </span>
-                            <span>Education and Training</span>
+                            <span className="text-sm">Education and Training</span>
                         </p>
-                        <ul className="ml-12 space-y-2">
+                        <ul className="ml-10 space-y-2">
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <MdSchool />
                                 </span>
-                                Management Studies
+                                <span className="text-sm">Management Studies</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <GiBrain />
                                 </span>
-                                Skill Development
+                                <span className="text-sm">Skill Development</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <MdOutlineSelfImprovement />
                                 </span>
-                                Training for Advanced Applications
+                                <span className="text-sm">Training for Advanced Applications</span>
                             </li>
                         </ul>
                     </div>
                     <button
                         onClick={() => navigate("/all-services", { state: 1500 })}
-                        className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-6 py-2.5 text-[#1A5D1A] font-semibold absolute bottom-6 hover:bg-green-100 transition-colors"
+                        className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-4 py-2 text-[#1A5D1A] font-semibold absolute bottom-4 hover:bg-green-100 transition-colors text-sm"
                         aria-label="Learn more about Academia"
                     >
                         Learn More <BiSolidRightArrow />
                     </button>
                 </div>
 
-                <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-8 pb-20 flex flex-col items-center relative gap-5 bg-white border-t-4 border-t-[#1A5D1A]">
-                    <img src={services3} alt="Events icon" className="w-[25%]" />
-                    <h2 className="text-[#1A5D1A] font-bold text-2xl text-center font-stoke px-4">
+                <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-6 pb-20 flex flex-col items-center relative gap-3 bg-white border-t-4 border-t-[#1A5D1A]">
+                    <img src={services3} alt="Events icon" className="w-[20%]" />
+                    <h2 className="text-[#1A5D1A] font-bold text-xl text-center font-stoke px-2">
                         IV. IHA EVENTS
                     </h2>
-                    <div className="flex flex-col px-8 font-medium items-start w-full gap-4">
-                        <ul className="ml-12 space-y-2">
+                    <div className="flex flex-col px-4 font-medium items-start w-full gap-3">
+                        <ul className="ml-10 space-y-2">
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <TbSocial />
                                 </span>
-                                Social Events
+                                <span className="text-sm">Social Events</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <FaTheaterMasks />
                                 </span>
-                                Cultural Events
+                                <span className="text-sm">Cultural Events</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <FaBook />
                                 </span>
-                                Literary Events
+                                <span className="text-sm">Literary Events</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <FaPalette />
                                 </span>
-                                Art and Stage Events
+                                <span className="text-sm">Art and Stage Events</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-2xl text-[#1A5D1A]">
                                     <FaRunning />
                                 </span>
-                                Sports Events
+                                <span className="text-sm">Sports Events</span>
                             </li>
                         </ul>
                     </div>
                     <button
                         onClick={() => navigate("/all-services")}
-                        className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-6 py-2.5 text-[#1A5D1A] font-semibold absolute bottom-6 hover:bg-green-100 transition-colors"
+                        className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-4 py-2 text-[#1A5D1A] font-semibold absolute bottom-4 hover:bg-green-100 transition-colors text-sm"
                         aria-label="Learn more about Events"
                     >
                         Learn More <BiSolidRightArrow />
