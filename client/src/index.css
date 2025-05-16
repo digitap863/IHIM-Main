@@ -49,3 +49,13 @@
     opacity: 1;
 }
 
+@layer base {
+    @font-face {
+      font-family: "lucida";
+      /* font-weight: 400; */
+      src: url("/font/LucidaHandwritingStdRg.TTF") format("truetype");
+      font-style: normal;
+    }
+  
+  
+  }

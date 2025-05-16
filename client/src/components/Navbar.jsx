@@ -73,7 +73,7 @@ function Navbar() {
               navigate('/')
 
             }} 
-            className={` ${path === '/gallery' || path === '/all-services' || open ? 'text-[#1A5D1A]' : scrolling} relative cursor-pointer z-0 font-mont `} >IHA</h5>
+            className={` ${path === '/gallery' || path === '/all-services' || open ? 'text-[#1A5D1A]' : scrolling} relative cursor-pointer z-0 font-lucida `} >IHA</h5>
 
             {/* <img src={lOGO} alt="logo" className='h-auto w-20'/> */}
           </div>

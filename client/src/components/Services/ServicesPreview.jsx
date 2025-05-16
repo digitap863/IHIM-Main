@@ -1,18 +1,14 @@
 import React from "react";
-import services2 from "../../assets/Images/Home/services2.png";
 import services3 from "../../assets/Images/Home/services3.png";
 import sd1 from "../../assets/Images/Services/sd1.png";
 import sd2 from "../../assets/Images/Services/sd2.png";
 import sd3 from "../../assets/Images/Services/sd3.png";
 
 import { BiSolidRightArrow } from "react-icons/bi";
-import { IoMan } from "react-icons/io5";
-import { MdOutlineSelfImprovement } from "react-icons/md";
-import { GiBrain } from "react-icons/gi";
-import { TbBookFilled } from "react-icons/tb";
-import { PiPlantFill } from "react-icons/pi";
-import { BsCalendar2DateFill } from "react-icons/bs";
-import { GiWitchFlight } from "react-icons/gi";
+import { MdOutlineSelfImprovement, MdHealthAndSafety, MdHotel, MdSchool, MdChurch } from "react-icons/md";
+import { GiBrain, GiMountainClimbing, GiPartyPopper, GiGraduateCap } from "react-icons/gi";
+import { TbBookFilled, TbSocial } from "react-icons/tb";
+import { FaTheaterMasks, FaBook, FaPalette, FaRunning } from "react-icons/fa";
 import leaf from "../../assets/Images/Shared/leaf.png";
 import leafM from "../../assets/Images/Shared/leafMirror.png";
 import bubble from "../../assets/Images/Shared/Ellipse1.png";
@@ -57,13 +53,13 @@ function ServicesPreview() {
             </h1>
             
             <p className="w-[90%] md:w-[70%] lg:w-[60%] text-center my-6 text-lg">
-                IHA Karnakshethras are centers of excellence providing <strong>innovative human-centered solutions</strong> through the "ihavasa sutra" methodology, addressing all aspects of life, wellness, and personal development.
+                IHA Karnakshethras are centers of excellence providing <strong>innovative human-centered solutions</strong> through the &quot;ihavasa sutra&quot; methodology, addressing all aspects of life, wellness, and personal development.
             </p>
 
-            <img src={lOGO} className="w-[50%] md:w-[20%] xl:w-[20%] my-5" alt="IHA Logo" />
+            <img src={lOGO} className="w-[50%] md:w-[20%] xl:w-[8%] my-5" alt="IHA Logo" />
 
-            <h2 className="text-[#1A5D1A] font-stoke text-2xl md:text-3xl">IHA</h2>
-            <h3 className="font-semibold my-1 text-xl text-center">
+            <h2 className="text-[#1A5D1A]  text-2xl md:text-3xl font-lucida">IHA</h2>
+            <h3 className="font-semibold my-1 text-xl text-center font-lucida">
                 Innovative Human Resource Applications
             </h3>
             <p className="text-center text-lg mb-12 md:text-base mt-2">
@@ -71,191 +67,185 @@ function ServicesPreview() {
                 personalized development programs and happiness-focused activities.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
                 <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-8 pb-20 flex flex-col items-center relative gap-5 bg-white border-t-4 border-t-[#1A5D1A]">
-                    <img src={sd1} alt="Education and Training icon" className="w-[25%]" />
+                    <img src={sd2} alt="Hospitality icon" className="w-[25%]" />
                     <h2 className="text-[#1A5D1A] font-bold text-2xl text-center font-stoke px-4">
-                        IHA EDUCATION AND TRAINING
+                       I. IHA HOSPITALITY
                     </h2>
                     <div className="flex flex-col px-8 font-medium gap-4 items-start w-full">
                         <p className="flex items-start gap-3">
                             <span className="text-3xl text-[#1A5D1A] mt-1">
-                                <IoMan />
+                                <MdHealthAndSafety />
                             </span>
-                            <span>Human Resource Potential Development & Specialized Training Programs</span>
+                            <span>IHA Healthcare</span>
+                        </p>
+                        <ul className="ml-12 list-disc space-y-1">
+                            <li>Screening Services</li>
+                            <li>Referral Services</li>
+                            <li>Research Initiatives</li>
+                        </ul>
+                        <p className="flex items-start gap-3">
+                            <span className="text-3xl text-[#1A5D1A] mt-1">
+                                <MdHotel />
+                            </span>
+                            <span>Hospitality and Allied Management Studies</span>
                         </p>
                         <p className="flex items-start gap-3">
                             <span className="text-3xl text-[#1A5D1A] mt-1">
-                                <MdOutlineSelfImprovement />
+                                <MdSchool />
                             </span>
-                            <span>Transformative Self-improvement Techniques & Life Skills</span>
+                            <span>Training for Hostel, Hotel and Hospital Jobs</span>
                         </p>
                         <p className="flex items-start gap-3">
                             <span className="text-3xl text-[#1A5D1A] mt-1">
                                 <GiBrain />
                             </span>
-                            <span>Evidence-based Solutions for Real-life Challenges</span>
+                            <span>Add-on Skill Development Studies and Practices</span>
                         </p>
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
-                                <TbBookFilled />
-                            </span>
-                            <span>Comprehensive Education Programs</span>
-                        </p>
-                        <ul className="ml-12 list-disc space-y-1">
-                            <li>Management studies & Leadership Training</li>
-                            <li>Advanced Skill Development</li>
-                            <li>Community Awareness Programs</li>
-                        </ul>
                     </div>
                     <button
                         onClick={() => navigate("/all-services", { state: 300 })}
                         className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-6 py-2.5 text-[#1A5D1A] font-semibold absolute bottom-6 hover:bg-green-100 transition-colors"
-                        aria-label="Learn more about Education and Training"
+                        aria-label="Learn more about Hospitality"
                     >
                         Learn More <BiSolidRightArrow />
                     </button>
                 </div>
-                
+
                 <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-8 pb-20 flex flex-col items-center relative gap-5 bg-white border-t-4 border-t-[#1A5D1A]">
-                    <img src={services2} alt="Hotels and Hostels icon" className="w-[25%]" />
-                    <h2 className="text-[#1A5D1A] font-bold text-2xl uppercase text-center font-stoke px-4">
-                        IHA HOTELS AND HOSTELS
+                    <img src={sd3} alt="Tourism icon" className="w-[25%]" />
+                    <h2 className="text-[#1A5D1A] font-bold text-2xl text-center font-stoke px-4">
+                      II. IHA TOURISM
                     </h2>
                     <div className="flex flex-col px-8 font-medium items-start w-full gap-4">
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
-                                <BsCalendar2DateFill />
-                            </span>
-                            <span>Immersive Experiential Stay Programs</span>
-                        </p>
-                        <ul className="ml-12 list-disc space-y-2">
-                            <li>Authentic Cultural Immersion Experiences</li>
-                            <li>Rejuvenating Nature Retreat Programs</li>
-                            <li>Holistic Wellness & Renewal Packages</li>
-                            <li>Traditional Kerala Hospitality Services</li>
-                            <li>Curated Local Cultural Experiences</li>
+                        <ul className="ml-12 space-y-2">
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <GiBrain />
+                                </span>
+                                Eco Tourism
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <GiMountainClimbing />
+                                </span>
+                                Adventure Tourism
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <MdChurch />
+                                </span>
+                                Religious Tourism
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <GiPartyPopper />
+                                </span>
+                                Festival Tourism
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <GiGraduateCap />
+                                </span>
+                                Educational Tourism
+                            </li>
                         </ul>
                     </div>
                     <button
-                        onClick={() => navigate("/all-services")}
+                        onClick={() => navigate("/all-services", { state: 1000 })}
                         className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-6 py-2.5 text-[#1A5D1A] font-semibold absolute bottom-6 hover:bg-green-100 transition-colors"
-                        aria-label="Learn more about Hotels and Hostels"
+                        aria-label="Learn more about Tourism"
                     >
                         Learn More <BiSolidRightArrow />
                     </button>
                 </div>
-                
+
                 <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-8 pb-20 flex flex-col items-center relative gap-5 bg-white border-t-4 border-t-[#1A5D1A]">
-                    <img src={services3} alt="Events icon" className="w-[25%]" />
+                    <img src={sd1} alt="Academia icon" className="w-[25%]" />
                     <h2 className="text-[#1A5D1A] font-bold text-2xl text-center font-stoke px-4">
-                        IHA EVENTS
+                        III. IHA ACADEMIA
                     </h2>
                     <div className="flex flex-col px-8 font-medium items-start w-full gap-4">
                         <p className="flex items-start gap-3">
                             <span className="text-3xl text-[#1A5D1A] mt-1">
                                 <TbBookFilled />
                             </span>
-                            <span>Professional Theatre & Event Management</span>
+                            <span>Education and Training</span>
                         </p>
-                        <ul className="ml-12 list-disc space-y-2">
-                            <li>Cultural, Artistic & Literary Celebrations</li>
-                            <li>Human Resource Development Conferences</li>
-                            <li>Educational Forums & Interactive Workshops</li>
-                            <li>Community Engagement Programs</li>
+                        <ul className="ml-12 space-y-2">
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <MdSchool />
+                                </span>
+                                Management Studies
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <GiBrain />
+                                </span>
+                                Skill Development
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <MdOutlineSelfImprovement />
+                                </span>
+                                Training for Advanced Applications
+                            </li>
+                        </ul>
+                    </div>
+                    <button
+                        onClick={() => navigate("/all-services", { state: 1500 })}
+                        className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-6 py-2.5 text-[#1A5D1A] font-semibold absolute bottom-6 hover:bg-green-100 transition-colors"
+                        aria-label="Learn more about Academia"
+                    >
+                        Learn More <BiSolidRightArrow />
+                    </button>
+                </div>
+
+                <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-8 pb-20 flex flex-col items-center relative gap-5 bg-white border-t-4 border-t-[#1A5D1A]">
+                    <img src={services3} alt="Events icon" className="w-[25%]" />
+                    <h2 className="text-[#1A5D1A] font-bold text-2xl text-center font-stoke px-4">
+                        IV. IHA EVENTS
+                    </h2>
+                    <div className="flex flex-col px-8 font-medium items-start w-full gap-4">
+                        <ul className="ml-12 space-y-2">
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <TbSocial />
+                                </span>
+                                Social Events
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <FaTheaterMasks />
+                                </span>
+                                Cultural Events
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <FaBook />
+                                </span>
+                                Literary Events
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <FaPalette />
+                                </span>
+                                Art and Stage Events
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="text-2xl text-[#1A5D1A]">
+                                    <FaRunning />
+                                </span>
+                                Sports Events
+                            </li>
                         </ul>
                     </div>
                     <button
                         onClick={() => navigate("/all-services")}
                         className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-6 py-2.5 text-[#1A5D1A] font-semibold absolute bottom-6 hover:bg-green-100 transition-colors"
                         aria-label="Learn more about Events"
-                    >
-                        Learn More <BiSolidRightArrow />
-                    </button>
-                </div>
-                
-                <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-8 pb-20 flex flex-col items-center relative gap-5 bg-white border-t-4 border-t-[#1A5D1A]">
-                    <img src={sd2} alt="Healthcare icon" className="w-[25%]" />
-                    <h2 className="text-[#1A5D1A] font-bold text-2xl text-center font-stoke px-4">
-                        IHA HEALTHCARE
-                    </h2>
-                    <div className="flex flex-col px-8 font-medium items-start w-full gap-4">
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
-                                <IoMan />
-                            </span>
-                            <span>Comprehensive Health & Wellness Centers</span>
-                        </p>
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
-                                <MdOutlineSelfImprovement />
-                            </span>
-                            <span>Sustainable Healthcare Infrastructure Development</span>
-                        </p>
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
-                                <PiPlantFill />
-                            </span>
-                            <span>Integrated Healthcare Solutions</span>
-                        </p>
-                        <ul className="ml-12 list-disc space-y-1">
-                            <li>Health Screening & Assessment Programs</li>
-                            <li>Specialized Medical Referral Services</li>
-                            <li>Innovative Healthcare Research Initiatives</li>
-                        </ul>
-                    </div>
-                    <button
-                        onClick={() => navigate("/all-services", { state: 1000 })}
-                        className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-6 py-2.5 text-[#1A5D1A] font-semibold absolute bottom-6 hover:bg-green-100 transition-colors"
-                        aria-label="Learn more about Healthcare"
-                    >
-                        Learn More <BiSolidRightArrow />
-                    </button>
-                </div>
-                
-                <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-8 pb-20 flex flex-col items-center relative gap-5 bg-white border-t-4 border-t-[#1A5D1A]">
-                    <img src={sd3} alt="Tourism icon" className="w-[25%]" />
-                    <h2 className="text-[#1A5D1A] font-bold text-2xl text-center font-stoke px-4">
-                        IHA TOURISM
-                    </h2>
-                    <div className="flex flex-col px-8 font-medium items-start w-full gap-4">
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
-                                <TbBookFilled />
-                            </span>
-                            <span className="font-semibold">Educational Tourism</span>
-                        </p>
-                        <p className="ml-10">
-                            "Ente Keralam" - Journey through Kerala's rich history and cultural heritage
-                        </p>
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
-                                <PiPlantFill />
-                            </span>
-                            <span className="font-semibold">Eco-Tourism Experiences</span>
-                        </p>
-                        <p className="ml-10">"Kalladikkodan Beauty" - Sustainable nature exploration</p>
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
-                                <BsCalendar2DateFill />
-                            </span>
-                            <span className="font-semibold">Festival Tourism</span>
-                        </p>
-                        <p className="ml-10">
-                            "For thy Eyes & Minds" - Immersive festival experiences across Kerala
-                        </p>
-                        <p className="flex items-start gap-3">
-                            <span className="text-3xl text-[#1A5D1A] mt-1">
-                                <GiWitchFlight />
-                            </span>
-                            <span className="font-semibold">Adventure Tourism</span>
-                        </p>
-                        <p className="ml-10">"Hillocks & Brooks" - Thrilling outdoor adventures</p>
-                    </div>
-                    <button
-                        onClick={() => navigate("/all-services", { state: 1500 })}
-                        className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-6 py-2.5 text-[#1A5D1A] font-semibold absolute bottom-6 hover:bg-green-100 transition-colors"
-                        aria-label="Learn more about Tourism"
                     >
                         Learn More <BiSolidRightArrow />
                     </button>
