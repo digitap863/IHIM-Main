@@ -85,9 +85,9 @@ function OurServices() {
         className="w-[25%] md:w-[16%] xl:w-[8%] mb-8   "
         alt=""
       />
-      <h1 className="text-[#1A5D1A] font-lucida text-2xl md:text-4xl">IHA </h1>
+      <h1 className="text-[#1A5D1A] font-lucida text-2xl md:text-4xl">iha </h1>
       <h5 className="font-semibold my-1 font-lucida">
-        (Innovative human resource applications)
+        (⁠Institutions for Human Resource application⁠)
       </h5>
       <p className="text-center text-tiny mb-5 md:text-base mt-2">
         The Multi Faceted Activity Hub. <br /> Iha karmena shri sambhavati.
@@ -130,7 +130,7 @@ function OurServices() {
                         </p>
                     </div>
                     <button
-                        onClick={() => navigate("/all-services", { state: 300 })}
+                        onClick={() => navigate("/contact", { state: 300 })}
                         className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-4 py-2 text-[#1A5D1A] font-semibold absolute bottom-4 hover:bg-green-100 transition-colors text-sm "
                         aria-label="Learn more about Hospitality"
                     >
@@ -178,7 +178,7 @@ function OurServices() {
                         </ul>
                     </div>
                     <button
-                        onClick={() => navigate("/all-services", { state: 1000 })}
+                        onClick={() => navigate("/contact", { state: 1000 })}
                         className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-4 py-2 text-[#1A5D1A] font-semibold absolute bottom-4 hover:bg-green-100 transition-colors text-sm"
                         aria-label="Learn more about Tourism"
                     >
@@ -189,7 +189,7 @@ function OurServices() {
                 <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-6 pb-20 flex flex-col items-center relative gap-3 bg-white border-t-4 border-t-[#1A5D1A]">
                     <img src={sd1} alt="Academia icon" className="w-[20%]" />
                     <h2 className="text-[#1A5D1A] font-bold text-xl text-center font-stoke px-2">
-                        III. IHA ACADEMIA
+                        III. IHA AKADEMIA 
                     </h2>
                     <div className="flex flex-col px-4 font-medium items-start w-full gap-3">
                         <p className="flex items-start gap-2">
@@ -220,7 +220,7 @@ function OurServices() {
                         </ul>
                     </div>
                     <button
-                        onClick={() => navigate("/all-services", { state: 1500 })}
+                        onClick={() => navigate("/contact", { state: 1500 })}
                         className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-4 py-2 text-[#1A5D1A] font-semibold absolute bottom-4 hover:bg-green-100 transition-colors text-sm"
                         aria-label="Learn more about Academia"
                     >
@@ -268,7 +268,7 @@ function OurServices() {
                         </ul>
                     </div>
                     <button
-                        onClick={() => navigate("/all-services")}
+                        onClick={() => navigate("/contact", { state: 1500 })}
                         className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-4 py-2 text-[#1A5D1A] font-semibold absolute bottom-4 hover:bg-green-100 transition-colors text-sm"
                         aria-label="Learn more about Events"
                     >

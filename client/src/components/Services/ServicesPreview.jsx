@@ -58,9 +58,9 @@ function ServicesPreview() {
 
             <img src={lOGO} className="w-[50%] md:w-[20%] xl:w-[8%] my-5" alt="IHA Logo" />
 
-            <h2 className="text-[#1A5D1A] text-2xl md:text-3xl font-lucida">IHA</h2>
+            <h2 className="text-[#1A5D1A] text-2xl md:text-3xl font-lucida">iha</h2>
             <h3 className="font-semibold my-1 text-xl text-center font-lucida">
-                Innovative Human Resource Applications
+                Institutions for Human Resource application
             </h3>
             <p className="text-center text-lg mb-12 md:text-base mt-2">
                 Professional facilitation hubs transforming lives through <br /> 
@@ -105,7 +105,7 @@ function ServicesPreview() {
                         </p>
                     </div>
                     <button
-                        onClick={() => navigate("/all-services", { state: 300 })}
+                        onClick={() => navigate("/contact", { state: 300 })}
                         className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-4 py-2 text-[#1A5D1A] font-semibold absolute bottom-4 hover:bg-green-100 transition-colors text-sm "
                         aria-label="Learn more about Hospitality"
                     >
@@ -153,7 +153,7 @@ function ServicesPreview() {
                         </ul>
                     </div>
                     <button
-                        onClick={() => navigate("/all-services", { state: 1000 })}
+                        onClick={() => navigate("/contact", { state: 1000 })}
                         className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-4 py-2 text-[#1A5D1A] font-semibold absolute bottom-4 hover:bg-green-100 transition-colors text-sm"
                         aria-label="Learn more about Tourism"
                     >
@@ -164,7 +164,7 @@ function ServicesPreview() {
                 <div className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 pt-6 pb-20 flex flex-col items-center relative gap-3 bg-white border-t-4 border-t-[#1A5D1A]">
                     <img src={sd1} alt="Academia icon" className="w-[20%]" />
                     <h2 className="text-[#1A5D1A] font-bold text-xl text-center font-stoke px-2">
-                        III. IHA ACADEMIA
+                        III. IHA AKADEMIA
                     </h2>
                     <div className="flex flex-col px-4 font-medium items-start w-full gap-3">
                         <p className="flex items-start gap-2">
@@ -195,7 +195,7 @@ function ServicesPreview() {
                         </ul>
                     </div>
                     <button
-                        onClick={() => navigate("/all-services", { state: 1500 })}
+                        onClick={() => navigate("/contact", { state: 1500 })}
                         className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-4 py-2 text-[#1A5D1A] font-semibold absolute bottom-4 hover:bg-green-100 transition-colors text-sm"
                         aria-label="Learn more about Academia"
                     >
@@ -243,7 +243,7 @@ function ServicesPreview() {
                         </ul>
                     </div>
                     <button
-                        onClick={() => navigate("/all-services")}
+                        onClick={() => navigate("/contact", { state: 1500 })}
                         className="flex items-center gap-2 border-[#1A5D1A] border-2 rounded-lg px-4 py-2 text-[#1A5D1A] font-semibold absolute bottom-4 hover:bg-green-100 transition-colors text-sm"
                         aria-label="Learn more about Events"
                     >

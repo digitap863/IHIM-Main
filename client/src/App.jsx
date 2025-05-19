@@ -37,7 +37,7 @@ function App() {
         <Route path="/services" element={<Suspense fallback={<FallbackUI />}><Services /></Suspense>} />
         <Route path="/contact" element={<Suspense fallback={<FallbackUI />}><Contact /></Suspense>} />
         <Route path="/gallery" element={<Suspense fallback={<FallbackUI />}><Gallery /></Suspense>} />
-        <Route path="/all-services" element={<Suspense fallback={<FallbackUI />}><AllServices /></Suspense>} />
+        {/* <Route path="/all-services" element={<Suspense fallback={<FallbackUI />}><AllServices /></Suspense>} /> */}
         <Route path="/landing" element={<Suspense fallback={<FallbackUI />}><LandingPage /></Suspense>} />
       </Routes>
       </div>
