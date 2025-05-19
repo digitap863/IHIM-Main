@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import services2 from "../../assets/Images/Home/services2.png";
 import services3 from "../../assets/Images/Home/services3.png";
-import { ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
 import leaf from "../../assets/Images/Shared/leaf.png";
 import leafM from "../../assets/Images/Shared/leafMirror.png";
 import bubble from "../../assets/Images/Shared/Ellipse1.png";

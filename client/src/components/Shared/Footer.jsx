@@ -19,8 +19,8 @@ function Footer() {
             </div>
             <div>
                 <h2 className='text-xl lg:text-3xl font-bold mb-3 lg:mb-9'>Address</h2>
-                <p className='font-normal text-sm lg:text-base'>193 A, PARC, <br />
-                    Kalavath Road, <br /> Near BSNL,<br /> Palarvattom PO, <br /> Kochi-682025.</p>
+                <p className='font-normal text-sm lg:text-base'>CC43.210A, Gopikas <br />
+                   1st Floor, Kalavath Road <br /> Near BSNL,<br /> Palarvattom PO, <br /> Kochi-682025.</p>
             </div>
 
             <div className='flex text-xl lg:text-2xl gap-3 lg:gap-4'>

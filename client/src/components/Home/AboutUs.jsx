@@ -16,8 +16,6 @@ function AboutUs({ title, content }) {
       <img src={bubble} alt="" className='absolute w-[20%] opacity-30 -top-[10%] -right-[3%]' />
       <img src={bubble} alt="" className='absolute w-[20%] opacity-[15%] float top-[40%] right-[40%]' />
       <img src={bubble} alt="" className='absolute w-[40%] lg:w-[13%] opacity-20 bottom-[30%] -left-[5%]' />
-     
-
         <div className='flex justify-center items-center relative px-10 lg:px-0'>
           <img src={jumping} alt="" className='w-[70rem] md:w-[50%] lg:w-[40rem] xl:w-[70rem]' />
         </div>

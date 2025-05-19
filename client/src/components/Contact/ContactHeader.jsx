@@ -44,7 +44,7 @@ function ContactHeader({ title, pageTitle }) {
             </div>
             <div className='flex flex-col gap-1'>
               <h3 className='font-semibold md:font-bold lg:font-semibold text-base md:text-2xl xl:text-lg'>Mail Us</h3>
-              <a className='text-sm xl:text-base' href='mailto:ihimworld@gmail.com'>ihimworld@gmail.com</a>
+              <a className='text-sm xl:text-base' href='mailto:ask4iham@gmail.com'>ask4iham@gmail.com</a>
               {/* <p>ihim@kochi.in</p> */}
 
             </div>
@@ -55,8 +55,8 @@ function ContactHeader({ title, pageTitle }) {
             </div>
             <div className='flex flex-col gap-1'>
               <h3 className='font-semibold md:font-bold lg:font-semibold text-base md:text-2xl xl:text-lg'>Call Us</h3>
-              <a className='text-sm xl:text-base' href="tel:+919946646651">+919946646651</a>
               <a className='text-sm xl:text-base' href="tel:+919567851158">+919567851158</a>
+              <a className='text-sm xl:text-base' href="tel:+919495089436">+919495089436</a>
             </div>
           </div>
           <div className='bg-white flex pl-3 lg:pl-6  lg:w-1/3 gap-7 items-center rounded-xl py-4 lg:py-10'>
@@ -65,8 +65,13 @@ function ContactHeader({ title, pageTitle }) {
             </div>
             <div className='flex flex-col gap-1'>
               <h3 className='font-semibold md:font-bold lg:font-semibold text-base md:text-2xl xl:text-lg'>Locate Us</h3>
-              <p className='text-sm'>193 A, PARC, <br />
-               Kalavath Road, <br /> Near BSNL, Palarvattom PO, <br /> Kochi-682025.</p>
+         
+
+               CC43.210A, Gopikas <br />
+               1st Floor, Kalavath Road <br />
+               Near BSNL Exchange <br />
+               Palarivattam, PO, Kochi <br />
+               682025
             </div>
           </div>
         </div> : null}

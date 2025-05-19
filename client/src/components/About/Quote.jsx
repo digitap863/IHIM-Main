@@ -20,7 +20,7 @@ const Quotes = [
         author: `- Balagopal KV`,
     },
     {
-        quote: `During protein synthesis essential amino-acids demonstrate rate limiting activities. Similarly human performance rate of the other human resource potentials in the form of blockage. The challenge is about learning the blockage`,
+        quote: `During protein synthesis essential amino-acids demonstrate rate limiting activities. Simialray human resources of non-optimal potential factors limit the performance rate of the other human resource potentials in the form of blockages.`,
         author: `- Santhos Kuman A`,
     },
 ];
